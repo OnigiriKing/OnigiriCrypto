@@ -1,0 +1,135 @@
+:root {
+  --header-color: #8e96b5;
+}
+
+
+
+.headerWrapper {
+  display: flex;
+  background-color: var(--header-color);
+  color: white;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+}
+
+.iconWrapper img {
+    width: 40px;
+}
+
+.iconWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: black;
+    margin-left: 7px;
+    flex: 1;
+}
+
+.iconWrapper a {
+  display: flex;
+   text-decoration: none;
+   color: black;
+   align-items: center;
+}
+
+.btcPriceHeader {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Links */
+.pageLinks {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+  height: 100%;
+  align-items: center;
+}
+
+.pageLinks span {
+  margin-right: 40px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+
+
+/* Drop box */
+.dropBox {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  width: 140px;
+  height: auto;
+  background-color: var(--header-color);
+}
+.dropBox img {
+  width: 40px;
+}
+
+.dropBox ul {
+  width: 40px;
+  display: block;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dropBox li {
+  list-style-type: none;
+}
+
+
+/* wallet drop */
+
+.walletDrop {
+  width: 80px;
+  cursor: pointer;
+  padding: 0px;
+  padding-bottom: 5px;
+};
+
+
+
+.dropBoxOpen {
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.dropBoxClosed {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.1s;
+  transition: ease-out 0.1s;
+}
+
+.wallet-list-element {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.wallet-list-element a {
+  text-decoration: none;
+  color: black;
+}
+
+.wallet-list-element img {
+  margin-right: 5px;
+  width: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.crypto-price-drop-box {
+  padding: 0px;
+}
+.crypto-price-drop-box li {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
