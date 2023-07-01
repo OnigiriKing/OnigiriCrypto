@@ -1,1 +1,1 @@
-# OnigiriCrypto, all right reserved. Crypto exchange based on Bitfinex API
+OnigiriCrypto, all right reserved. Crypto exchange based on Bitfinex API
