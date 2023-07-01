@@ -37,3 +37,26 @@
 .footerLinks img {
   width: 20px;
 }
+
+.ApiOnline, .ApiOfline {
+  font-size: 40px;
+  margin-right: 2px;
+}
+
+.ApiOnline {
+  color: rgb(1, 162, 1);
+}
+
+.ApiOffline {
+  color: red;
+
+}
+
+.ApiStatus {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}

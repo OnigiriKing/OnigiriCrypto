@@ -1,1 +1,1 @@
-Crypto exhange OnigiriExchange, all right reserved
+Crypto exhange OnigiriCrypto, all right reserved

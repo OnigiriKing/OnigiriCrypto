@@ -3,6 +3,7 @@ import "./style.css";
 import lnkdin from "./img/lnkdin.png";
 import inst from "./img/inst.png";
 import facebook from "./img/facebook.png";
+import ApiStatus from "../API/FetchApiStatus";
 
 export default function Footer() {
   const links = {
@@ -17,7 +18,7 @@ export default function Footer() {
       <div className="cypywrite">
         Copyright © 2023 OnigiriKing. All rights reserved.
       </div>
-
+      <ApiStatus />
       <div className="footerLinks">
         <span>
           <a href={links.linkedinLink}>

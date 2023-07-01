@@ -1,37 +1,38 @@
 import React from "react";
 import "./style.css";
 import OnigiriIcon from "./img/OnigiriIcon.png";
-import btc from "./img/BTC.png";
-import eth from "./img/ETH.png";
+import btcImg from "./img/BTC.png";
+import ethImg from "./img/ETH.png";
 import signInImg from "./img/sign-in.png";
 import signOutImg from "./img/sign-out.png";
 import balanceImg from "./img/balance.png";
+import CryptoPrice from "../API/FetchCryptoPrice";
 
-function changeCrypto(answer, change) {
-  answer === "ETH" ? change("ETH") : change("BTC");
-}
+function DropBoxItems({ change }) {
+  const cryptoTypes = [
+    { Name: "Bitcoin", Type: "BTC", Img: btcImg },
+    { Name: "Ethereum", Type: "ETH", Img: ethImg },
+  ];
 
-function DropBoxItems({ type, change }) {
-  const image = type.toLowerCase() == "btc" ? btc : eth;
-
-  const cryptoName = type === "BTC" ? "Bitcoin" : "Ethereum";
-  return (
-      <li onClick={() => changeCrypto(type, change)}>
-        <img src={image} />
-        <h4 style={{ marginLeft: "5px" }}>{cryptoName}</h4>
+  return cryptoTypes.map((el, index) => {
+    return (
+      <li key={index} onClick={() => change(el.Type)}>
+        <img src={el.Img} />
+        <h4 style={{ marginLeft: "5px" }}>{el.Name}</h4>
       </li>
-  );
+    );
+  });
 }
 
 function Wallet({ state, change }) {
   const walletOptions = [
     { Name: "Balance", Link: "Balance", Img: balanceImg },
-    { Name: "Sign out", Link: "Sign", Img: signOutImg },
+    { Name: "Sign out", Link: "SignOut", Img: signOutImg },
   ];
 
   const deff = (
     <li onClick={(a) => change(true)} className="wallet-list-element">
-      <a href="#">
+      <a href="SignIn">
         <img src={signInImg}></img>
         Sign in
       </a>
@@ -43,7 +44,7 @@ function Wallet({ state, change }) {
         return (
           <li
             onClick={(a) => {
-              if (el.Name === "Sign out") change(false)
+              if (el.Name === "Sign out") change(false);
             }}
             key={index}
             className="wallet-list-element"
@@ -81,15 +82,13 @@ export default function Header() {
 
   const [walletDropped, changeWalletDrop] = React.useState(false);
 
-  const cryptoPrice =
-    crypto === "BTC" ? "BTC price: 26,000" : "ETH price: 2,000";
 
   return (
     <header className="headerWrapper">
       <div className="iconWrapper">
         <a href="http://localhost:3000/">
           <img src={OnigiriIcon} />
-          <h4>Onigiri Exchange</h4>
+          <h4>Onigiri Crypto</h4>
         </a>
       </div>
       <div
@@ -97,15 +96,14 @@ export default function Header() {
         onMouseEnter={() => changeCryptoDrop(true)}
         onMouseLeave={() => changeCryptoDrop(false)}
       >
-        <h3>{cryptoPrice}</h3>
-          <ul
-            className={`dropBox crypto-price-drop-box ${
-              cryptoDropped ? "dropBoxOpen" : "dropBoxClosed"
-            }`}
-          >
-            <DropBoxItems type="BTC" change={setCrypto} />
-            <DropBoxItems type="ETH" change={setCrypto} />
-          </ul>
+        <CryptoPrice crypto={crypto} />
+        <ul
+          className={`dropBox crypto-price-drop-box ${
+            cryptoDropped ? "dropBoxOpen" : "dropBoxClosed"
+          }`}
+        >
+          <DropBoxItems change={setCrypto} />
+        </ul>
       </div>
 
       <div className="pageLinks">
