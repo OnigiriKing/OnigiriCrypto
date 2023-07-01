@@ -1,6 +1,9 @@
 const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
+const crypto = require('crypto');
+
+
 const app = express();
 const port = 3000;
 
@@ -8,6 +11,7 @@ const port = 3000;
 app.use(cors());
 
 // Define your server routes and middleware here
+// get crypto price
 app.get("/api/:symbol-price", async (req, res) => {
   const symbol = req.params.symbol.toUpperCase();
   try {
@@ -20,6 +24,8 @@ app.get("/api/:symbol-price", async (req, res) => {
     res.status(500).json({ error: "An error occurred" });
   }
 });
+
+// Get API status
 app.get("/api/status", async (req, res) => {
   try {
     const response = await axios.get(
@@ -31,6 +37,9 @@ app.get("/api/status", async (req, res) => {
     res.status(500).json({ error: "An error occurred" });
   }
 });
+
+// get wallet information with API keys
+
 
 // Start the server
 app.listen(port, () => {
