@@ -65,6 +65,7 @@
   width: 140px;
   height: auto;
   background-color: var(--header-color);
+  z-index: 1;
 }
 .dropBox img {
   width: 40px;

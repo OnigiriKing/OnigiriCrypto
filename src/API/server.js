@@ -1,7 +1,6 @@
 const axios = require("axios");
 const express = require("express");
 const cors = require("cors");
-const crypto = require('crypto');
 
 
 const app = express();
@@ -39,6 +38,21 @@ app.get("/api/status", async (req, res) => {
 });
 
 // get wallet information with API keys
+app.get("/api/:cryptoType-:timeCandles-candles", async (req, res) => {
+  const cryptoType = req.params.cryptoType.toUpperCase();
+  const timeCandles = req.params.timeCandles;
+  try {
+    const response = await axios.get(
+      `https://api-pub.bitfinex.com/v2/candles/trade:${timeCandles}:t${cryptoType}USD/hist`
+    );
+    res.send(response.data);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "An error occurred" });
+  }
+});
+
+
 
 
 // Start the server
