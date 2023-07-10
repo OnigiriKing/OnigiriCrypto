@@ -68,7 +68,8 @@ export default function ApexChart({crypto, period}) {
         options={options}
         series={series}
         type="candlestick"
-        height={720}
+        height={'95%'}
+        width={'100%'}
       />
     </div>
   );

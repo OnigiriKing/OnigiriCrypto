@@ -1,9 +1,8 @@
 import React from "react";
 import "./style.css";
-import ApexChart from "../API/FetchCandls";
+import ApexChart from "../../../API/FetchCandls";
 
-function Menu({changeCrypto, changeTime}) {
-
+function Menu({ changeCrypto, changeTime }) {
   return (
     <nav className="left-side-menu">
       <div className="settings">
@@ -27,16 +26,14 @@ function Menu({changeCrypto, changeTime}) {
   );
 }
 
-
-export default function Body() {
-  const [cryptoType, setType] = React.useState("BTC")
-  const [candleTime, setTime] = React.useState("1h")
-
+export default function CryptoGraph() {
+  const [cryptoType, setType] = React.useState("BTC");
+  const [candleTime, setTime] = React.useState("1h");
 
   return (
-    <div className="body-wrapper">
+    <>
       <Menu changeCrypto={setType} changeTime={setTime} />
       <ApexChart crypto={cryptoType} period={candleTime} />
-    </div>
+    </>
   );
-};
+}

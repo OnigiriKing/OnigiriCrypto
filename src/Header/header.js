@@ -7,6 +7,7 @@ import signInImg from "./img/sign-in.png";
 import signOutImg from "./img/sign-out.png";
 import balanceImg from "./img/balance.png";
 import CryptoPrice from "../API/FetchCryptoPrice";
+import { Link, NavLink } from "react-router-dom";
 
 function DropBoxItems({ change }) {
   const cryptoTypes = [
@@ -86,10 +87,10 @@ export default function Header() {
   return (
     <header className="headerWrapper">
       <div className="iconWrapper">
-        <a href="http://localhost:3000/">
+        <Link to="/graph">
           <img src={OnigiriIcon} />
           <h4>Onigiri Crypto</h4>
-        </a>
+        </Link>
       </div>
       <div
         className="btcPriceHeader"
@@ -121,7 +122,18 @@ export default function Header() {
             <Wallet state={wallet} change={setWallet} />
           </ul>
         </span>
+        <span>
+          <NavLink to={"/graph"} state={"graph"}>
+            <h4 style={{ color: "black" }}>Trading</h4>
+          </NavLink>
+        </span>
+        <span>
+          <NavLink to={"/about"}>
+            <h4 style={{ color: "black" }}>About</h4>
+          </NavLink>
+        </span>
       </div>
     </header>
   );
 }
+

@@ -1,0 +1,31 @@
+:root {
+  --bg-color: #8e96b5;
+}
+
+
+.left-side-menu {
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    min-width: 180px;
+    height: 100%;
+    background-color: var(--bg-color);
+}
+
+.settings {
+    margin-top: 20px;
+}
+
+.select-crypto {
+    height: 20px;
+
+}
+
+.select-candle-time {
+    height: 20px;
+}
+
+#chart {
+    width: 100%;
+    z-index: 0;
+}

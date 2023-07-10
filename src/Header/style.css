@@ -49,7 +49,6 @@
 }
 
 .pageLinks span {
-  margin-right: 40px;
   padding: 10px 0px;
   cursor: pointer;
 }
@@ -132,4 +131,3 @@
   align-items: center;
   margin: 5px;
 }
-
