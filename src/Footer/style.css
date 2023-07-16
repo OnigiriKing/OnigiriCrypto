@@ -27,11 +27,17 @@
 }
 
 .footerLinks a {
-  margin: 0px 5px;
+  margin: 0px 2px;
+}
+
+@media (min-width: 750px) {
+  .footerLinks a {
+    margin: 0px 5px;
+  }
 }
 
 .footerLinks img:active {
-  background-color: rgb(61, 128, 162);
+  background-color: var(--bg-color);
 }
 
 .footerLinks img {
