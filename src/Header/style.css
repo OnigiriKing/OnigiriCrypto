@@ -1,12 +1,8 @@
-:root {
-  --header-color: #8e96b5;
-}
-
 
 
 .headerWrapper {
   display: flex;
-  background-color: var(--header-color);
+  background-color: var(--bg-color);
   width: 100%;
   height: 40px;
   align-items: center;
