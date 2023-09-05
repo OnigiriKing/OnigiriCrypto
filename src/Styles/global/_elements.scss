@@ -1,10 +1,5 @@
 @use "./colors" as *;
 
-$maxWidth: 70rem;
-$baseMargin: 0 1rem;
-$basePadding: 2rem 0;
-$topMargin: 6.5rem;
-
 
 // width
 
@@ -12,28 +7,6 @@ $bigWidth: 780px;
 
 @mixin bigWidth {
   @media (max-width: $bigWidth) {
-    @content;
-  }
-}
-
-$mediumWidth: 700px;
-
-@mixin mediumWidth {
-  @media (max-width: $mediumWidth) {
-    @content;
-  }
-}
-$smallWidth: 572px;
-
-@mixin smallWidth {
-  @media (max-width: $smallWidth) {
-    @content;
-  }
-}
-$phoneWidth: 415px;
-
-@mixin phoneWidth {
-  @media (max-width: $phoneWidth) {
     @content;
   }
 }
