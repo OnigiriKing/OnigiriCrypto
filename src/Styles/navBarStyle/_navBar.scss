@@ -1,0 +1,78 @@
+@use "../global" as *;
+
+#nav-bar {
+    background-color: #ffff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+    box-shadow: 0 4px 5px -5px rgba(0,0,0,.23);
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-logo {
+    
+
+    img {
+        width: 6rem;
+        height: auto;
+    }
+}
+
+.nav-wrapper {
+ height: 3rem;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-weight: 600;
+
+    a {
+        border-bottom: 1px solid #ffff;
+
+        @include smallWidth {
+            display: none;
+        }
+    }
+
+    a:hover {
+        border-bottom: 1px solid black;
+        transition: all 0s;
+    }
+    .nav-basket {
+        cursor: pointer;
+        position: relative;
+
+        h3 {
+            font-size: $smallFont;
+            color: #ffff;
+            background-color: $mainRed;
+            text-align: center;
+            border-radius: 50%;
+            position: absolute;
+            height: 1.2rem;
+            width: 1.3rem;
+            top: -.6rem;
+            left: 1.2rem;
+
+        }
+    }
+}
+
+.nav-menu {
+    display: none;
+    cursor: pointer;
+    margin-right: 1rem;
+
+    @include smallWidth {
+            display: flex;
+        }
+}

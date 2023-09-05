@@ -1,0 +1,242 @@
+@use "../global" as *;
+
+#home-page {
+  margin-top: $topMargin;
+}
+
+//! Start screen
+
+.start-screen {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.start-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .start-products {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "one two three" "one two four";
+
+    @include mediumWidth {
+      grid-template-areas: "one two" "three four";
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+    }
+
+    div {
+      cursor: pointer;
+      position: relative;
+
+      @include mediumWidth {
+        height: 15rem;
+    }
+
+      .start-img-cover {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        background-color: #00000050;
+        width: 100%;
+        height: 100%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #00000068;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+        object-fit: cover;
+      }
+
+      p {
+        position: absolute;
+        z-index: 3;
+        bottom: 1.5rem;
+        left: 1rem;
+        color: #ffff;
+        font-size: $bigFont;
+      }
+    }
+
+    div:nth-child(1) {
+      grid-area: one;
+    }
+    div:nth-child(2) {
+      grid-area: two;
+    }
+    div:nth-child(3) {
+      grid-area: three;
+    }
+    div:nth-child(4) {
+      grid-area: four;
+    }
+  }
+}
+
+//! Products
+
+#products-screen {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.products-wrapper {
+  h2 {
+    font-size: $mediumFont;
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid #0000004c;
+    transition: all 0.2s ease-in-out;
+    padding: 0.5rem;
+
+    &:hover {
+      border-color: #000000;
+    }
+
+    img {
+      width: 100%;
+      margin-bottom: 0.4rem;
+    }
+
+    h3 {
+      font-size: $mediumFont;
+    }
+  }
+}
+
+//! Baner
+#banner-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-wrapper {
+  display: flex;
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    gap: 1rem;
+    position: relative;
+    background-color: $mainGrey;
+
+    @include mediumWidth {
+    align-items: center;
+    padding: 3rem 4rem;
+    text-align: center;
+  }
+
+    a {
+      width: fit-content;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 0.4rem;
+      width: fit-content;
+      font-size: $mediumFont;
+      color: #ffff;
+      background-color: #000000;
+      border-color: #000000;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #000000;
+        background-color: #ffff;
+      }
+    }
+  }
+  .banner-image {
+    width: 50%;
+
+    @include mediumWidth {
+    display: none;
+  }
+  }
+}
+
+.banner-reverse {
+  flex-direction: row-reverse;
+}
+
+//! Trending now
+#trending-screen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.trending-wrapper {
+  overflow: hidden;
+}
+
+.trending-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 1rem;
+  margin-top: 0rem;
+
+  div {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+.trending-btns {
+  button:nth-child(1) {
+    transform: rotate(180deg);
+  }
+
+  button {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: none;
+    background-color: #000000c0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #000000;
+    }
+  }
+}
+
+.trending-items {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+
+  a {
+    min-width: 11.9rem;
+  }
+}
+
+.trending-items::-webkit-scrollbar {
+  display: none;
+}

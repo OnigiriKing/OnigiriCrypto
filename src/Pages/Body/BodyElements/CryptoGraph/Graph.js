@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import ApexChart from "../../../API/FetchCandls";
+import ApexChart from "../../../../API/FetchCandls";
 
 function Menu({ changeCrypto, changeTime }) {
   return (
