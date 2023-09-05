@@ -6,7 +6,7 @@ import App from "./app";
 
 function Content() {
   return (
-    <nav className="mainWrapper">
+    <nav className="main-wrapper">
     <App />
     </nav>
   );
