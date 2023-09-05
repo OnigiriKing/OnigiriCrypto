@@ -1,9 +1,5 @@
 import React from "react";
 import "./style.css";
-import lnkdin from "./img/lnkdin.png";
-import inst from "./img/inst.png";
-import facebook from "./img/facebook.png";
-import ApiStatus from "../API/FetchApiStatus";
 
 export default function Footer() {
   const links = {
@@ -14,23 +10,8 @@ export default function Footer() {
 
 
   return (
-    <footer className="footerWrapper">
-      <div className="cypywrite">
-        Copyright © 2023 OnigiriKing. All rights reserved.
-      </div>
-      <ApiStatus />
-      <div className="footerLinks">
-        <span>
-          <a href={links.linkedinLink}>
-            <img src={lnkdin} />
-          </a>
-          <a href={links.instLink}>
-            <img src={inst} />
-          </a>
-          <a href={links.fbLink}>
-            <img src={facebook} />
-          </a>
-        </span>
+    <footer id="footer-page">
+      <div className="footer-wrapper">
       </div>
     </footer>
   );

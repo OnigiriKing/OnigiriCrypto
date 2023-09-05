@@ -1,13 +1,5 @@
 import React from "react";
-import "./style.css";
-import OnigiriIcon from "./img/OnigiriIcon.png";
-import btcImg from "./img/BTC.png";
-import ethImg from "./img/ETH.png";
-import signInImg from "./img/sign-in.png";
-import signOutImg from "./img/sign-out.png";
-import balanceImg from "./img/balance.png";
-import CryptoPrice from "../API/FetchCryptoPrice";
-import { Link, NavLink } from "react-router-dom";
+
 
 function DropBoxItems({ change }) {
   const cryptoTypes = [
@@ -77,62 +69,12 @@ export default function Header() {
     JSON.parse(window.localStorage.getItem("Wallet")) || false
   );
 
-  React.useEffect(() => {
-    window.localStorage.setItem("Wallet", wallet);
-  }, [wallet]);
 
-  const [walletDropped, changeWalletDrop] = React.useState(false);
 
 
   return (
-    <header className="headerWrapper">
-      <div className="iconWrapper">
-        <Link to="/graph">
-          <img src={OnigiriIcon} />
-          <h4>Onigiri Crypto</h4>
-        </Link>
-      </div>
-      <div
-        className="btcPriceHeader"
-        onMouseEnter={() => changeCryptoDrop(true)}
-        onMouseLeave={() => changeCryptoDrop(false)}
-      >
-        <CryptoPrice crypto={crypto} />
-        <ul
-          className={`dropBox crypto-price-drop-box ${
-            cryptoDropped ? "dropBoxOpen" : "dropBoxClosed"
-          }`}
-        >
-          <DropBoxItems change={setCrypto} />
-        </ul>
-      </div>
+    <header className="header-page">
 
-      <div className="pageLinks">
-        <span
-          className="walletHeader"
-          onMouseEnter={() => changeWalletDrop(true)}
-          onMouseLeave={() => changeWalletDrop(false)}
-        >
-          <h4 style={{ color: "black" }}>Wallet ⌄</h4>
-          <ul
-            className={`dropBox walletDrop ${
-              walletDropped ? "dropBoxOpen" : "dropBoxClosed"
-            }`}
-          >
-            <Wallet state={wallet} change={setWallet} />
-          </ul>
-        </span>
-        <span>
-          <NavLink to={"/graph"} state={"graph"}>
-            <h4 style={{ color: "black" }}>Trading</h4>
-          </NavLink>
-        </span>
-        <span>
-          <NavLink to={"/about"}>
-            <h4 style={{ color: "black" }}>About</h4>
-          </NavLink>
-        </span>
-      </div>
     </header>
   );
 }
