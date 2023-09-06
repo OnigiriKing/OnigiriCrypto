@@ -1,21 +1,15 @@
 import React from "react";
-import "./index.css";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import App from "./app";
+import "./dist/style.css";
 
 
-function Content() {
-  return (
-    <nav className="main-wrapper">
-    <App />
-    </nav>
-  );
-}
-
-
-const html = document.getElementById("root");
-createRoot(html).render(<Content />);
-
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+      <App />
+  </React.StrictMode>
+)
 
 
 
