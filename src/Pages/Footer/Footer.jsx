@@ -1,5 +1,4 @@
 import React from "react";
-import "./style.css";
 
 export default function Footer() {
   const links = {
@@ -11,7 +10,21 @@ export default function Footer() {
 
   return (
     <footer id="footer-page">
-      <div className="footer-wrapper">
+      <div className="wrapper footer-wrapper">
+        <img></img>
+        <div className="footer-all-links">
+          <div className="footer-social">
+            <a></a>
+            <a></a>
+            <a></a>
+            <a></a>
+          </div>
+          <div className="footer-terms">
+            <a>Privacy</a>
+            <a>Terms of Use</a>
+          </div>
+        </div>
+        <img></img>
       </div>
     </footer>
   );

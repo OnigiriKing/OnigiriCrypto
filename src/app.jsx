@@ -1,5 +1,6 @@
 import Header from "./Pages/Header/Header";
 import Body from "./Pages/Body/HomePage";
+import Footer from "./Pages/Footer/Footer";
 
 export default function App() {
 
@@ -9,7 +10,7 @@ export default function App() {
     <>
     <Header />
     <Body />
-
+    <Footer />
     </>
   );
 }
