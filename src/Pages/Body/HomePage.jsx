@@ -1,9 +1,8 @@
 import React from "react";
-import "./style.css";
 
-export default function BodyRouter() {
+export default function Body() {
   return (
-    <div className="bodyWrapper">
+    <div className="body-page">
 
     </div>
   );
