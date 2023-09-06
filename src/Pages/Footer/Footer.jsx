@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer id="footer-page">
-      <div className="wrapper footer-wrapper">
+      <div className="wrapper header-footer-wrapper">
         <img></img>
         <div className="footer-all-links">
           <div className="footer-social">

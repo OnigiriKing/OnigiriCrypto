@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <header className="header-page">
-      <div className="header-wrapper">
+      <div className="wrapper header-footer-wrapper">
         <div className="header-name">OnigiriCrypto</div>
         <div className="header-links">
           <a>Home</a>
