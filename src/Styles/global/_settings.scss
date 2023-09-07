@@ -21,3 +21,14 @@ body {
   padding: 2rem 0rem;
   margin: 0 2rem;
 }
+
+path, svg {
+  transition: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  transition: color .5s ease-in-out;
+}
