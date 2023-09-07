@@ -1,4 +1,5 @@
 import React from "react";
+import allSvg from "../../svg/allSvg";
 
 
 export default function Header() {
@@ -7,16 +8,18 @@ export default function Header() {
   return (
     <header className="header-page">
       <div className="wrapper header-footer-wrapper">
-        <div className="header-name">OnigiriCrypto</div>
+        <div className="header-name">
+          <h2>Onigiri Crypto</h2>
+        </div>
         <div className="header-links">
-          <a>Home</a>
-          <a>Market</a>
-          <a>Choose Us</a>
-          <a>Join</a>
+          <a href="#">Home</a>
+          <a href="#">Market</a>
+          <a href="#">Choose Us</a>
+          <a href="#" >Join</a>
         </div>
         <div className="header-social">
-          <a>Social</a>
-          <a>Social</a>
+          <a>{allSvg(10).twitter}</a>
+          <a>{allSvg(10).youTube}</a>
         </div>
       </div>
     </header>
