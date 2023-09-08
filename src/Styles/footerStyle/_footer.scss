@@ -1,9 +1,32 @@
 @use "../global/" as *;
 
 #footer-page {
-  background-color: rgb(236, 236, 236);
+  background-color: transparent;
   width: 100%;
   height: 8rem;
   display: flex;
   justify-content: center;
+
+  .footer-all-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-social, .footer-terms {
+    display: flex;
+    gap: 1rem;
+  }
+
+  h3 {
+    margin-top: .5rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    img {
+      width: 1.5rem;
+    }
+  }
 }

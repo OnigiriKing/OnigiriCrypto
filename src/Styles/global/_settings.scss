@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   transition: all 0.2s;
   font-family: "Roboto", sans-serif;
+  background-color: #000;
 }
 
 body {
@@ -31,4 +32,8 @@ a {
   color: #fff;
   cursor: pointer;
   transition: color .5s ease-in-out;
+  &:hover {
+    color: blue;
+  }
 }
+

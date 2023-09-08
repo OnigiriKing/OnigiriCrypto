@@ -15,11 +15,11 @@ export default function Header() {
           <a href="#">Home</a>
           <a href="#">Market</a>
           <a href="#">Choose Us</a>
-          <a href="#" >Join</a>
+          <a href="#">Join</a>
         </div>
         <div className="header-social">
-          <a>{allSvg(10).twitter}</a>
-          <a>{allSvg(10).youTube}</a>
+          <a href="#">{allSvg(10).twitter}</a>
+          <a href="#">{allSvg(10).youTube}</a>
         </div>
       </div>
     </header>
