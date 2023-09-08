@@ -2,6 +2,29 @@
 
 #body-page {
     width: 100%;
+}
+
+
+//! Welcome page
+
+#welcome-screen {
+    width: 100%;
     height: 100vh;
-    color: rgb(77, 0, 77);
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-wrapper {
+}
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3.5rem;
+
+    h2:nth-child(2) {
+        @include gradient;
+    }
+
 }

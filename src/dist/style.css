@@ -4,6 +4,7 @@
   scroll-behavior: smooth;
   transition: all 0.2s;
   font-family: "Roboto", sans-serif;
+  color: #fff;
   background-color: #000;
 }
 
@@ -26,12 +27,14 @@ path, svg {
 
 a {
   text-decoration: none;
-  color: #fff;
   cursor: pointer;
   transition: color 0.5s ease-in-out;
 }
 a:hover {
-  color: blue;
+  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .header-page {
@@ -85,6 +88,25 @@ a:hover {
 
 #body-page {
   width: 100%;
+}
+
+#welcome-screen {
+  width: 100%;
   height: 100vh;
-  color: rgb(77, 0, 77);
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 3.5rem;
+}
+.welcome-message h2:nth-child(2) {
+  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }/*# sourceMappingURL=style.css.map */

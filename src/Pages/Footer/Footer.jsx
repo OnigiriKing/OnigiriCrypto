@@ -3,11 +3,6 @@ import allSvg from "../../svg/allSvg";
 import bfxLogo from "./img/bfxLogo.png";
 
 export default function Footer() {
-  const links = {
-    linkedinLink: "https://www.linkedin.com/in/onigiriking/",
-    instLink: "https://instagram.com/onigiri_king",
-    fbLink: "https://www.facebook.com/profile.php?id=100079879942721",
-  };
 
   return (
     <footer id="footer-page">
@@ -25,7 +20,7 @@ export default function Footer() {
             <a href="#">Terms of Use</a>
           </div>
           <h3>
-            Powered by
+            Powered by the
             <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
               Bitfinex
             </a>{" "}
