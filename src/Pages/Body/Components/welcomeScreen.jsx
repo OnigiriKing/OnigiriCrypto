@@ -1,4 +1,8 @@
 import { Link } from "react-router-dom";
+import btc from "../img/crypto/btc.png"
+import eth from "../img/crypto/eth.png"
+import tether from "../img/crypto/tether.png"
+import leo from "../img/crypto/leo.png"
 
 export default function Welcome() {
 
@@ -11,26 +15,25 @@ export default function Welcome() {
          </div>
          <div className="welcome-crypto">
            <Link to="/">
-            <img></img>
-            <div>Bitcoin</div>
-            <h3>2000</h3>
+             <img src={btc}></img>
+             <div>Bitcoin</div>
+             <h3>2000</h3>
            </Link>
            <Link to="/">
-            <img></img>
-            <div>Ethereum</div>
-            <h3>3000</h3>
+             <img src={eth}></img>
+             <div>Ethereum</div>
+             <h3>3000</h3>
            </Link>
            <Link to="/">
-            <img></img>
-            <div>Tether</div>
-            <h3>1</h3>
+             <img src={tether}></img>
+             <div>Tether</div>
+             <h3>1</h3>
            </Link>
            <Link to="/">
-            <img></img>
-            <div>Leo</div>
-            <h3>20</h3>
+             <img src={leo}></img>
+             <div>Leo</div>
+             <h3>20</h3>
            </Link>
-
          </div>
        </div>
      </div>

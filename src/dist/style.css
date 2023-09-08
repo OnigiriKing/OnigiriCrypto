@@ -109,4 +109,20 @@ a:hover {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+}
+
+.welcome-crypto {
+  display: flex;
+  gap: 7rem;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.welcome-crypto a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.welcome-crypto img {
+  width: 5rem;
 }/*# sourceMappingURL=style.css.map */
