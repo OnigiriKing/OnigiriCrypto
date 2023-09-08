@@ -1,6 +1,13 @@
 @use "./colors" as *;
 
 
+@mixin gradient {
+  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
+
 // width
 
 $bigWidth: 780px;
