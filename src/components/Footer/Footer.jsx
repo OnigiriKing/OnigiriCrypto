@@ -1,6 +1,6 @@
 import React from "react";
-import allSvg from "../../svg/allSvg";
-import bfxLogo from "./img/bfxLogo.png";
+import allSvg from "svg/allSvg";
+import bfxLogo from "img/bfxLogo.png";
 
 export default function Footer() {
 
