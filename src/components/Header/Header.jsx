@@ -1,5 +1,5 @@
 import React from "react";
-import allSvg from "../../svg/allSvg";
+import allSvg from "svg/allSvg";
 
 
 export default function Header() {
