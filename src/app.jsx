@@ -1,6 +1,6 @@
-import Header from "./Pages/Header/HeaderPage";
-import HomePage from "./Pages/Body/HomePage";
-import Footer from "./Pages/Footer/FooterPage";
+import HeaderPage from "Pages/Header/HeaderPage";
+import FooterPage from "Pages/Footer/FooterPage";
+import HomePage from "Pages/Body/HomePage";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -9,14 +9,11 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      <HeaderPage />
       <Routes>
-        <Route
-          path="/"
-          element={
-            <HomePage />} />
-        </Routes>
-      <Footer />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+      <FooterPage />
     </>
   );
 }
