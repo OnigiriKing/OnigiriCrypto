@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import btc from "../img/crypto/btc.png"
-import eth from "../img/crypto/eth.png"
-import tether from "../img/crypto/tether.png"
-import leo from "../img/crypto/leo.png"
+import btc from "img/crypto/btc.png"
+import eth from "img/crypto/eth.png"
+import tether from "img/crypto/tether.png"
+import leo from "img/crypto/leo.png"
 
 export default function Welcome() {
 

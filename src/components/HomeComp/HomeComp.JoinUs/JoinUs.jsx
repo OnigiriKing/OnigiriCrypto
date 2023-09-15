@@ -1,5 +1,5 @@
 
-export default function Join() {
+export default function JoinUs() {
 
    return (
      <div id="join-us-screen">

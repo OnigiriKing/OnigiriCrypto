@@ -1,6 +1,6 @@
-import Header from "./Pages/Header/Header";
+import Header from "./Pages/Header/HeaderPage";
 import HomePage from "./Pages/Body/HomePage";
-import Footer from "./Pages/Footer/Footer";
+import Footer from "./Pages/Footer/FooterPage";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
