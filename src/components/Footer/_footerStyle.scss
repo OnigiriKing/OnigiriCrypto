@@ -1,4 +1,4 @@
-@use "../global/" as *;
+@use "/Users/nikitawr/Dev/onigiri_crypto/src/Styles/global" as *;
 
 #footer-page {
   background-color: transparent;
@@ -14,15 +14,16 @@
     gap: 1rem;
   }
 
-  .footer-social, .footer-terms {
+  .footer-social,
+  .footer-terms {
     display: flex;
     gap: 1rem;
   }
 
   h3 {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     display: flex;
-    gap: .5rem;
+    gap: 0.5rem;
     align-items: center;
 
     img {

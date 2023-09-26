@@ -10,22 +10,24 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>CONNECT YOUR WALLET</h3>
+                <p>Use Trust Wallet, Metamask or to connect to the app.</p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>SELECT YOUR QUANTITY</h3>
+                <p>
+                  Upload your crypto and set a title, description and price.
+                </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>CONFIRM TRANSACTION</h3>
+                <p>Earn by selling your crypto on our marketplace.</p>
               </div>
             </div>
           </div>
