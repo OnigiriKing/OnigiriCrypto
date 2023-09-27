@@ -1,9 +1,8 @@
 import React from "react";
-import allSvg from "svg/allSvg";
+import allSvg from "svg/headerFooterSvg";
 import bfxLogo from "img/footer/bfxLogo.png";
 
 export default function Footer() {
-
   return (
     <footer id="footer-page">
       <div className="wrapper header-footer-wrapper">

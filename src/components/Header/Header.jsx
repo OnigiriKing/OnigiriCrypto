@@ -1,10 +1,7 @@
 import React from "react";
-import allSvg from "svg/allSvg";
-
+import allSvg from "svg/headerFooterSvg";
 
 export default function Header() {
-
-
   return (
     <header className="header-page">
       <div className="wrapper header-footer-wrapper">
@@ -25,4 +22,3 @@ export default function Header() {
     </header>
   );
 }
-

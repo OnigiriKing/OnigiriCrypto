@@ -1,4 +1,4 @@
-export default function allSvg({width}) {
+export default function HeaderFooterSvg({width}) {
     const svg = {
       twitter: (
         <svg
