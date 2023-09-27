@@ -5,7 +5,7 @@ export default function ChooseUs() {
         <h2 className="choose-us-baner">
           WHY <b>CHOOSE US</b>
         </h2>
-        <div>
+        <div className="choose-us-body">
           <div className="choose-us-reasons">
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
@@ -31,27 +31,29 @@ export default function ChooseUs() {
               </div>
             </div>
           </div>
-          <div className="choose-us-img"></div>
+          <div className="choose-us-img">IMAGE</div>
           <div className="choose-us-reasons">
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>RECEIVE YOUR OWN NFTS</h3>
+                <p>Invest all your crypto at one place on one platform.</p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>TAKE A MARKET TO SELL</h3>
+                <p>
+                  Discover, collect the right crypto collections to buy or sell.
+                </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg"></div>
               <div className="choose-reason-text">
-                <h3></h3>
-                <p></p>
+                <h3>DRIVE YOUR COLLECTION</h3>
+                <p>We make it easy to Discover, Invest and manage.</p>
               </div>
             </div>
           </div>
