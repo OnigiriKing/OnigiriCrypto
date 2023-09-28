@@ -151,7 +151,7 @@ a:hover {
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 15rem;
   gap: 1rem;
 }
 
@@ -164,6 +164,10 @@ a:hover {
 .choose-reason-svg {
   display: flex;
   padding: 0.5rem;
+}
+
+.choose-us-img img {
+  width: 20rem;
 }
 
 #join-us-screen {

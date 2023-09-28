@@ -67,7 +67,7 @@
 .choose-us-reasons {
     display: flex;
     flex-direction: column;
-    width: 20rem;
+    width: 15rem;
     gap: 1rem;
 }
 
@@ -80,7 +80,12 @@
 .choose-reason-svg {
   display: flex;
   padding: .5rem;
+}
 
+.choose-us-img {
+  img {
+    width: 20rem;
+  }
 }
 
 //! Join us screen
