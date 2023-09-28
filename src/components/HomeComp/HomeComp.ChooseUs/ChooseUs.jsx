@@ -9,14 +9,14 @@ export default function ChooseUs() {
         <div className="choose-us-body">
           <div className="choose-us-reasons">
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>CONNECT YOUR WALLET</h3>
                 <p>Use Trust Wallet, Metamask or to connect to the app.</p>
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>SELECT YOUR QUANTITY</h3>
                 <p>
@@ -25,7 +25,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>CONFIRM TRANSACTION</h3>
                 <p>Earn by selling your crypto on our marketplace.</p>
@@ -35,14 +35,14 @@ export default function ChooseUs() {
           <div className="choose-us-img">IMAGE</div>
           <div className="choose-us-reasons">
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>RECEIVE YOUR OWN NFTS</h3>
                 <p>Invest all your crypto at one place on one platform.</p>
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>TAKE A MARKET TO SELL</h3>
                 <p>
@@ -51,7 +51,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(20).wallet}
+              <div className="choose-reason-svg">{homeSvg(30).wallet}
               </div>
               <div className="choose-reason-text">
                 <h3>DRIVE YOUR COLLECTION</h3>

@@ -1,4 +1,4 @@
-export default function homeSvg({ width }) {
+export default function homeSvg(width) {
   const svg = {
     wallet: (
       <svg

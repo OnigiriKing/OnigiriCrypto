@@ -162,9 +162,8 @@ a:hover {
 }
 
 .choose-reason-svg {
-  background-color: #2b5f14;
-  padding: 1rem;
-  color: #fff;
+  display: flex;
+  padding: 0.5rem;
 }
 
 #join-us-screen {
