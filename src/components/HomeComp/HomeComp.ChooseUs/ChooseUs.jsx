@@ -1,4 +1,5 @@
 import homeSvg from "svg/homeSvg";
+import homeBtf from "img/homePage/homeBtf.png"
 export default function ChooseUs() {
   return (
     <div id="choose-us-screen">
@@ -32,7 +33,9 @@ export default function ChooseUs() {
               </div>
             </div>
           </div>
-          <div className="choose-us-img">IMAGE</div>
+          <div className="choose-us-img">
+            <img src={homeBtf} />
+          </div>
           <div className="choose-us-reasons">
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
@@ -51,8 +54,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}
-              </div>
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
                 <h3>DRIVE YOUR COLLECTION</h3>
                 <p>We make it easy to Discover, Invest and manage.</p>
