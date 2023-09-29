@@ -1,5 +1,5 @@
 import homeSvg from "svg/homeSvg";
-import homeBtf from "img/homePage/homeBtf.png"
+import homeBtf from "img/homePage/homeBtf.png";
 export default function ChooseUs() {
   return (
     <div id="choose-us-screen">
@@ -12,24 +12,31 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h3>CONNECT YOUR WALLET</h3>
-                <p>Use Trust Wallet, Metamask or to connect to the app.</p>
-              </div>
-            </div>
-            <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
-              <div className="choose-reason-text">
-                <h3>SELECT YOUR QUANTITY</h3>
+                <h3>EASY WALLET INTEGRATION</h3>
                 <p>
-                  Upload your crypto and set a title, description and price.
+                  Connect Trust Wallet, Metamask, or any popular wallet
+                  effortlessly for a secure experience.
                 </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h3>CONFIRM TRANSACTION</h3>
-                <p>Earn by selling your crypto on our marketplace.</p>
+                <h3>DIVERSE CRYPTO SUPPORT</h3>
+                <p>
+                  Trade Bitcoin, Ethereum, and more - we support a variety of
+                  cryptocurrencies.
+                </p>
+              </div>
+            </div>
+            <div className="choose-reason">
+              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-text">
+                <h3>USER-FRIENDLY TOOLS</h3>
+                <p>
+                  Set quantities, customize listings, and control your crypto
+                  experience with ease.
+                </p>
               </div>
             </div>
           </div>
@@ -47,17 +54,21 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h3>TAKE A MARKET TO SELL</h3>
+                <h3>GLOBAL EXPOSURE</h3>
                 <p>
-                  Discover, collect the right crypto collections to buy or sell.
+                  Join a worldwide community of crypto enthusiasts to expand
+                  your network.
                 </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h3>DRIVE YOUR COLLECTION</h3>
-                <p>We make it easy to Discover, Invest and manage.</p>
+                <h3>PROFIT OPPORTUNITIES</h3>
+                <p>
+                  Maximize profits with our platform, whether you're new to
+                  trading or an expert.
+                </p>
               </div>
             </div>
           </div>

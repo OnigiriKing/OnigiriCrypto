@@ -151,8 +151,8 @@ a:hover {
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  width: 15rem;
-  gap: 1rem;
+  width: 20rem;
+  gap: 3rem;
 }
 
 .choose-reason {
@@ -167,7 +167,7 @@ a:hover {
 }
 
 .choose-us-img img {
-  width: 20rem;
+  width: 35rem;
 }
 
 #join-us-screen {
