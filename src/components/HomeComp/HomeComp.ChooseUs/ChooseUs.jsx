@@ -20,7 +20,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).btc}</div>
               <div className="choose-reason-text">
                 <h3>DIVERSE CRYPTO SUPPORT</h3>
                 <p>
@@ -30,7 +30,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).tool}</div>
               <div className="choose-reason-text">
                 <h3>USER-FRIENDLY TOOLS</h3>
                 <p>
@@ -45,14 +45,14 @@ export default function ChooseUs() {
           </div>
           <div className="choose-us-reasons">
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).nft}</div>
               <div className="choose-reason-text">
                 <h3>RECEIVE YOUR OWN NFTS</h3>
                 <p>Invest all your crypto at one place on one platform.</p>
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).global}</div>
               <div className="choose-reason-text">
                 <h3>GLOBAL EXPOSURE</h3>
                 <p>
@@ -62,7 +62,7 @@ export default function ChooseUs() {
               </div>
             </div>
             <div className="choose-reason">
-              <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
+              <div className="choose-reason-svg">{homeSvg(30).profit}</div>
               <div className="choose-reason-text">
                 <h3>PROFIT OPPORTUNITIES</h3>
                 <p>
