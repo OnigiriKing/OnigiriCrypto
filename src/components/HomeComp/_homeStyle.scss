@@ -67,7 +67,6 @@
 .choose-us-reasons {
     display: flex;
     flex-direction: column;
-    width: 20rem;
     gap: 3rem;
 }
 
@@ -75,6 +74,10 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 1rem;
+  box-shadow: 15 10 2;
+  background-color: rgb(16, 35, 49);
+
 }
 
 .choose-reason-svg {
@@ -84,7 +87,20 @@
 
 .choose-us-img {
   img {
-    width: 35rem;
+    width: 25rem;
+  }
+}
+
+.choose-reason-text {
+  background: transparent;
+  h2 {
+    margin-bottom: 1rem;
+    background: transparent;
+  }
+
+  p {
+    font-size: 1.2rem;
+    background: transparent;
   }
 }
 

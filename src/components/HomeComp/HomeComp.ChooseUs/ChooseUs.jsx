@@ -4,15 +4,15 @@ export default function ChooseUs() {
   return (
     <div id="choose-us-screen">
       <div className="wrapper choose-us-wrapper">
-        <h2 className="choose-us-baner">
+        <h1 className="choose-us-baner">
           WHY <b>CHOOSE US</b>
-        </h2>
+        </h1>
         <div className="choose-us-body">
           <div className="choose-us-reasons">
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h3>EASY WALLET INTEGRATION</h3>
+                <h2>EASY WALLET INTEGRATION</h2>
                 <p>
                   Connect Trust Wallet, Metamask, or any popular wallet
                   effortlessly for a secure experience.
@@ -22,7 +22,7 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).btc}</div>
               <div className="choose-reason-text">
-                <h3>DIVERSE CRYPTO SUPPORT</h3>
+                <h2>DIVERSE CRYPTO SUPPORT</h2>
                 <p>
                   Trade Bitcoin, Ethereum, and more - we support a variety of
                   cryptocurrencies.
@@ -32,7 +32,7 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).tool}</div>
               <div className="choose-reason-text">
-                <h3>USER-FRIENDLY TOOLS</h3>
+                <h2>USER-FRIENDLY TOOLS</h2>
                 <p>
                   Set quantities, customize listings, and control your crypto
                   experience with ease.
@@ -47,14 +47,14 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).nft}</div>
               <div className="choose-reason-text">
-                <h3>RECEIVE YOUR OWN NFTS</h3>
+                <h2>RECEIVE YOUR OWN NFTS</h2>
                 <p>Invest all your crypto at one place on one platform.</p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).global}</div>
               <div className="choose-reason-text">
-                <h3>GLOBAL EXPOSURE</h3>
+                <h2>GLOBAL EXPOSURE</h2>
                 <p>
                   Join a worldwide community of crypto enthusiasts to expand
                   your network.
@@ -64,7 +64,7 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).profit}</div>
               <div className="choose-reason-text">
-                <h3>PROFIT OPPORTUNITIES</h3>
+                <h2>PROFIT OPPORTUNITIES</h2>
                 <p>
                   Maximize profits with our platform, whether you're new to
                   trading or an expert.
