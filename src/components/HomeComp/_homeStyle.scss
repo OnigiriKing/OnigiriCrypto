@@ -61,12 +61,14 @@
 .choose-us-body {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .choose-reason {
@@ -92,14 +94,14 @@
 
 .choose-us-img {
   img {
-    width: 30rem;
+    width: 20rem;
   }
 }
 
 .choose-reason-text {
   background: transparent;
   h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     background: transparent;
     font-size: 1.4rem;
   }

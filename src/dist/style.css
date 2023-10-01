@@ -145,12 +145,14 @@ a:hover {
 .choose-us-body {
   display: flex;
   flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .choose-reason {
@@ -174,14 +176,14 @@ a:hover {
 }
 
 .choose-us-img img {
-  width: 30rem;
+  width: 20rem;
 }
 
 .choose-reason-text {
   background: transparent;
 }
 .choose-reason-text h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   background: transparent;
   font-size: 1.4rem;
 }
