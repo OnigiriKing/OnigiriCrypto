@@ -52,22 +52,22 @@
 }
 
 .choose-us-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
 }
 
 .choose-us-body {
   display: flex;
-    flex-direction: row;
-    gap: 2rem;
+  flex-direction: row;
+  gap: 2rem;
 }
 
 .choose-us-reasons {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .choose-reason {
@@ -76,13 +76,12 @@
   gap: 1rem;
   padding: 1rem;
   box-shadow: 15 10 2;
-  background-color: rgb(16, 35, 49);
-
+  background-color: $bg-color;
 }
 
 .choose-reason-svg {
   display: flex;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .choose-us-img {
