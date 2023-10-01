@@ -61,13 +61,12 @@
 .choose-us-body {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 }
 
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .choose-reason {
@@ -76,25 +75,33 @@
   gap: 1rem;
   padding: 1rem;
   box-shadow: 15 10 2;
-  background-color: $bg-color;
+  background-color: $bg-color-main;
+  border: 1px solid $bg-color-light;
+  border-radius: 2rem;
 }
 
 .choose-reason-svg {
   display: flex;
-  padding: 0.5rem;
+  padding: 1rem;
+  background: $gradient-colors;
+
+  svg {
+    background: transparent
+  }
 }
 
 .choose-us-img {
   img {
-    width: 25rem;
+    width: 30rem;
   }
 }
 
 .choose-reason-text {
   background: transparent;
   h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     background: transparent;
+    font-size: 1.4rem;
   }
 
   p {

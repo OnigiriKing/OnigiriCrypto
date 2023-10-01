@@ -1,5 +1,7 @@
-$bg-color: rgb(16, 35, 49);
+$bg-color-main: rgb(16, 35, 49);
 
-$bg-light: rgba(125, 188, 255, 0.6);
+$bg-color-light: rgba(23, 45, 62, 1);
 
-$gradient-colors: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+$bg-color-blue: rgba(125, 188, 255, 0.6);
+
+$gradient-colors: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));

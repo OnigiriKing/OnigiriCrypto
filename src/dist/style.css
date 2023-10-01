@@ -31,7 +31,7 @@ a {
   transition: color 0.5s ease-in-out;
 }
 a:hover {
-  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -106,7 +106,7 @@ a:hover {
   font-size: 3.5rem;
 }
 .welcome-message h2:nth-child(2) {
-  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -145,13 +145,12 @@ a:hover {
 .choose-us-body {
   display: flex;
   flex-direction: row;
-  gap: 2rem;
 }
 
 .choose-us-reasons {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1.5rem;
 }
 
 .choose-reason {
@@ -161,23 +160,30 @@ a:hover {
   padding: 1rem;
   box-shadow: 15 10 2;
   background-color: rgb(16, 35, 49);
+  border: 1px solid rgb(23, 45, 62);
+  border-radius: 2rem;
 }
 
 .choose-reason-svg {
   display: flex;
-  padding: 0.5rem;
+  padding: 1rem;
+  background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
+}
+.choose-reason-svg svg {
+  background: transparent;
 }
 
 .choose-us-img img {
-  width: 25rem;
+  width: 30rem;
 }
 
 .choose-reason-text {
   background: transparent;
 }
 .choose-reason-text h2 {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background: transparent;
+  font-size: 1.4rem;
 }
 .choose-reason-text p {
   font-size: 1.2rem;
@@ -203,7 +209,7 @@ a:hover {
   align-items: center;
 }
 .join-us-wrapper h2 b {
-  background-image: linear-gradient(to right, rgb(16, 35, 49), rgb(1, 167, 129));
+  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
