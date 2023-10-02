@@ -1,5 +1,5 @@
 import homeSvg from "svg/homeSvg";
-import homeBtf from "img/homePage/test2.png";
+import homeBtf from "img/homePage/homeBft.png";
 export default function ChooseUs() {
   return (
     <div id="choose-us-screen">
