@@ -56,7 +56,15 @@
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
+
+  h1 {
+    font-size: 3rem;
+    b {
+     @include gradient;
+    }
+  }
 }
+
 
 .choose-us-body {
   display: flex;
@@ -101,6 +109,10 @@
 
 .choose-reason-text {
   background: transparent;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   h2 {
     margin-bottom: 1rem;
     background: transparent;

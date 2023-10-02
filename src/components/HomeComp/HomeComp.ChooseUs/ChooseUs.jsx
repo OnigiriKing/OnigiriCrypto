@@ -1,5 +1,4 @@
 import homeSvg from "svg/homeSvg";
-// import homeBtf from "img/homePage/homeBtf.png";
 import homeBtf from "img/homePage/test2.png";
 export default function ChooseUs() {
   return (

@@ -141,6 +141,15 @@ a:hover {
   align-items: center;
   gap: 2.5rem;
 }
+.choose-us-wrapper h1 {
+  font-size: 3rem;
+}
+.choose-us-wrapper h1 b {
+  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
 .choose-us-body {
   display: flex;
@@ -182,6 +191,10 @@ a:hover {
 
 .choose-reason-text {
   background: transparent;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .choose-reason-text h2 {
   margin-bottom: 1rem;
