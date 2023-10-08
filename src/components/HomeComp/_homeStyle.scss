@@ -77,11 +77,12 @@
 }
 
 .coin-info {
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   display: grid;
   grid-template-columns: 14fr 20fr 20fr 20fr;
   text-align: right;
   align-items: center;
+  border-bottom: 1px solid #fff;
   
 
   .coin-info-img {
