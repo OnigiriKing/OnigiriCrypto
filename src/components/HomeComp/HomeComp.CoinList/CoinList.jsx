@@ -1,3 +1,5 @@
+import btc from "img/crypto/btc.png"
+
 export default function CoinList() {
 
   const element = (
@@ -25,7 +27,7 @@ export default function CoinList() {
            </div>
            <div className="coin-info">
              <div className="coin-info-img">
-               <img />
+               <img src={btc} alt="btc" />
                <h3>Bitcoin</h3>
              </div>
              <h3>$ 1,000</h3>

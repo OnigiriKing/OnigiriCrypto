@@ -160,9 +160,15 @@ a:hover {
   display: grid;
   grid-template-columns: 14fr 20fr 20fr 20fr;
   text-align: right;
+  align-items: center;
 }
 .coin-info .coin-info-img {
   display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.coin-info .coin-info-img img {
+  width: 3rem;
 }
 
 #choose-us-screen {

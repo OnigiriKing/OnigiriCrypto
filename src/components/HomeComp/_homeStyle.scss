@@ -81,10 +81,17 @@
   display: grid;
   grid-template-columns: 14fr 20fr 20fr 20fr;
   text-align: right;
+  align-items: center;
   
 
   .coin-info-img {
     display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 3rem;
+    }
   }
 
 
