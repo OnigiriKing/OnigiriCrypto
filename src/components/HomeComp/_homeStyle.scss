@@ -46,7 +46,34 @@
 
 // ! CoinList
 
+#coin-list-page {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.coin-list-wrapper {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
 
+.coin-list-table-banner {
+  display: flex;
+  justify-content: space-between;
+  background: $gradient-colors;
+  padding: 1rem 1rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+
+  h3 {
+    background: transparent;
+  }
+
+  h3:nth-child(1) {
+    margin-right: 5rem;
+  }
+}
 
 // ! Choose us screen
 #choose-us-screen {
