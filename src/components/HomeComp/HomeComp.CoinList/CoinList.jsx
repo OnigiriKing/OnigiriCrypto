@@ -1,5 +1,17 @@
 export default function CoinList() {
 
+  const element = (
+    <div className="coin-info">
+      <div>
+        <img />
+        <h3></h3>
+      </div>
+      <h3></h3>
+      <h3></h3>
+      <h3></h3>
+    </div>
+  );
+
    return (
      <div id="coin-list-page">
        <div className="wrapper coin-list-wrapper">
@@ -12,13 +24,13 @@ export default function CoinList() {
              <h3>Market Cap</h3>
            </div>
            <div className="coin-info">
-             <div>
+             <div className="coin-info-img">
                <img />
-               <h3></h3>
+               <h3>Bitcoin</h3>
              </div>
-             <h3></h3>
-             <h3></h3>
-             <h3></h3>
+             <h3>$ 1,000</h3>
+             <h3 className="coin-info-persantage">+1%</h3>
+             <h3>$ 65,000,000</h3>
            </div>
          </div>
          <div className="coin-list-pages"></div>

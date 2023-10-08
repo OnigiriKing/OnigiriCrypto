@@ -59,20 +59,35 @@
 }
 
 .coin-list-table-banner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 14fr 20fr 20fr 20fr;
   background: $gradient-colors;
   padding: 1rem 1rem;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
+  text-align: right;
 
   h3 {
     background: transparent;
   }
 
   h3:nth-child(1) {
-    margin-right: 5rem;
+    text-align: left;
   }
+}
+
+.coin-info {
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 14fr 20fr 20fr 20fr;
+  text-align: right;
+  
+
+  .coin-info-img {
+    display: flex;
+  }
+
+
 }
 
 // ! Choose us screen
