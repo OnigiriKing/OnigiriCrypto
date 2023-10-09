@@ -98,6 +98,20 @@
 
 }
 
+.coin-list-pages {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    button {
+    margin-top: 2rem;
+    padding: .5rem;
+    border-radius: 20rem;
+    font-size: 1.5rem;
+  }
+  }
+
 // ! Choose us screen
 #choose-us-screen {
   width: 100%;

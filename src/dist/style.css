@@ -172,6 +172,18 @@ a:hover {
   width: 3rem;
 }
 
+.coin-list-pages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.coin-list-pages button {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  border-radius: 20rem;
+  font-size: 1.5rem;
+}
+
 #choose-us-screen {
   width: 100%;
   height: 100vh;

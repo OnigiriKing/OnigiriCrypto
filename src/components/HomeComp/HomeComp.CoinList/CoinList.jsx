@@ -35,7 +35,9 @@ export default function CoinList() {
              <h3>$ 65,000,000</h3>
            </div>
          </div>
-         <div className="coin-list-pages"></div>
+         <div className="coin-list-pages">
+          <button>1</button>
+         </div>
        </div>
      </div>
    );
