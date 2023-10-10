@@ -28,6 +28,11 @@ path, svg {
   transition: none;
 }
 
+svg:hover{
+  color: $bg-color-blue;
+}
+
+
 a {
   text-decoration: none;
   cursor: pointer;

@@ -24,3 +24,5 @@ yarn-error.log*
 
 # keys
 src/API/keys.js
+src/common/api/apiKey.js
+src/common/data/apiKey.js
