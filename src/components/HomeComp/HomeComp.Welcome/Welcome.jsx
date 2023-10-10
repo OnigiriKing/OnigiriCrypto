@@ -3,6 +3,7 @@ import btc from "img/crypto/btc.png"
 import eth from "img/crypto/eth.png"
 import tether from "img/crypto/tether.png"
 import leo from "img/crypto/leo.png"
+import CoinPrice from "common/api/getCoinPrice";
 
 export default function Welcome() {
 
@@ -17,7 +18,7 @@ export default function Welcome() {
            <Link to="/">
              <img src={btc}></img>
              <div>Bitcoin</div>
-             <h3>2000</h3>
+             <h3>{CoinPrice("BTC")}</h3>
            </Link>
            <Link to="/">
              <img src={eth}></img>

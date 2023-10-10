@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-export default function CryptoPrice({ crypto }) {
+export default function CoinPrice({ crypto }) {
   const [price, setPrice] = React.useState(
     window.localStorage.getItem("TickerPrice") || 0
   );
@@ -35,8 +35,8 @@ export default function CryptoPrice({ crypto }) {
   }, [crypto]);
 
   return (
-    <h3 className="BodyWrapperPrice">
-      {crypto}/USD: {price}
-    </h3>
+    <>
+      {price}
+    </>
   );
 }
