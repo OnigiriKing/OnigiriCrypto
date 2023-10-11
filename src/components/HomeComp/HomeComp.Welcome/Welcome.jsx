@@ -1,11 +1,27 @@
 import { Link } from "react-router-dom";
 import btc from "img/crypto/btc.png"
 import eth from "img/crypto/eth.png"
-import tether from "img/crypto/tether.png"
+import usdt from "img/crypto/usdt.png"
 import leo from "img/crypto/leo.png"
 import CoinPrice from "common/api/getCoinPrice";
+import { welcomeCoins } from "common/data/coinsData";
 
 export default function Welcome() {
+
+  function Coins() {
+   return Object.keys(welcomeCoins).map((key) => {
+      const el = welcomeCoins[key];
+      return (
+        <Link to="/">
+          <img src={el.img}></img>
+          <div>{el.name}</div>
+          <h3>
+            <CoinPrice crypto={el.sigh} />
+          </h3>
+        </Link>
+      );
+    });
+  }
 
    return (
      <div id="welcome-screen">
@@ -15,7 +31,8 @@ export default function Welcome() {
            <h2>CRYPTO CURRENCIES</h2>
          </div>
          <div className="welcome-crypto">
-           <Link to="/">
+         <Coins />
+           {/* <Link to="/">
              <img src={btc}></img>
              <div>Bitcoin</div>
              <h3>
@@ -30,7 +47,7 @@ export default function Welcome() {
              </h3>
            </Link>
            <Link to="/">
-             <img src={tether}></img>
+             <img src={usdt}></img>
              <div>Tether</div>
              <h3>
                <CoinPrice crypto="USDT" />
@@ -40,7 +57,7 @@ export default function Welcome() {
              <img src={leo}></img>
              <div>Leo</div>
              <h3>20</h3>
-           </Link>
+           </Link> */}
          </div>
        </div>
      </div>
