@@ -18,17 +18,23 @@ export default function Welcome() {
            <Link to="/">
              <img src={btc}></img>
              <div>Bitcoin</div>
-             <h3>{CoinPrice("BTC")}</h3>
+             <h3>
+               <CoinPrice crypto="BTC" />
+             </h3>
            </Link>
            <Link to="/">
              <img src={eth}></img>
              <div>Ethereum</div>
-             <h3>3000</h3>
+             <h3>
+               <CoinPrice crypto="ETH" />
+             </h3>
            </Link>
            <Link to="/">
              <img src={tether}></img>
              <div>Tether</div>
-             <h3>1</h3>
+             <h3>
+               <CoinPrice crypto="USDT" />
+             </h3>
            </Link>
            <Link to="/">
              <img src={leo}></img>
