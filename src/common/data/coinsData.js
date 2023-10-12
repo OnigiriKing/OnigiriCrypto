@@ -1,7 +1,7 @@
 import btcImg from "img/crypto/btc.png"
 import ethImg from "img/crypto/eth.png"
 import leoImg from "img/crypto/leo.png"
-import usdtImg from "img/crypto/usdt.png"
+import avaxImg from "img/crypto/avax.png"
 
 export const welcomeCoins = {
   BTC: {
@@ -20,8 +20,8 @@ export const welcomeCoins = {
     img: leoImg,
   },
   USDT: {
-    name: "USDT",
-    sigh: "USDT",
-    img: usdtImg,
+    name: "AVAX",
+    sigh: "AVAX:",
+    img: avaxImg,
   },
 };
