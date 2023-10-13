@@ -1,4 +1,6 @@
 import btc from "img/crypto/btc.png"
+import CoinPrice from "common/api/getCoinPrice";
+
 
 export default function CoinList() {
 

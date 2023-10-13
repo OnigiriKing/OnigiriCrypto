@@ -32,32 +32,7 @@ export default function Welcome() {
          </div>
          <div className="welcome-crypto">
          <Coins />
-           {/* <Link to="/">
-             <img src={btc}></img>
-             <div>Bitcoin</div>
-             <h3>
-               <CoinPrice crypto="BTC" />
-             </h3>
-           </Link>
-           <Link to="/">
-             <img src={eth}></img>
-             <div>Ethereum</div>
-             <h3>
-               <CoinPrice crypto="ETH" />
-             </h3>
-           </Link>
-           <Link to="/">
-             <img src={usdt}></img>
-             <div>Tether</div>
-             <h3>
-               <CoinPrice crypto="USDT" />
-             </h3>
-           </Link>
-           <Link to="/">
-             <img src={leo}></img>
-             <div>Leo</div>
-             <h3>20</h3>
-           </Link> */}
+
          </div>
        </div>
      </div>
