@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-export default function CoinPrice({ crypto }) {
+export default function CoinPrice({ crypto, type=6 }) {
   const [price, setPrice] = React.useState(
     window.localStorage.getItem("TickerPrice") || 0
   );
@@ -15,7 +15,8 @@ export default function CoinPrice({ crypto }) {
       const response = await axios.get(
         `http://localhost:3000/api/${crypto}-price`
       );
-      setPrice(response.data[6]);
+      console.log(response.data)
+      setPrice(response.data);
     } catch (error) {
       console.error(error);
     }
@@ -36,7 +37,7 @@ export default function CoinPrice({ crypto }) {
 
   return (
     <>
-      {price}
+      {price[type]}
     </>
   );
 }

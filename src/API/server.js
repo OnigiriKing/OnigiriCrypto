@@ -12,7 +12,7 @@ app.use(cors());
 // Define your server routes and middleware here
 // get crypto price
 app.get("/api/:symbol-price", async (req, res) => {
-  const symbol = req.params.symbol.toUpperCase();
+  const symbol = req.params.symbol;
   try {
     const response = await axios.get(
       `https://api.bitfinex.com/v2/ticker/t${symbol}USD`
