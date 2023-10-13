@@ -25,11 +25,8 @@ path, svg {
   transition: none;
 }
 
-path:hover {
-  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+svg:hover {
+  color: rgba(125, 188, 255, 0.6);
 }
 
 a {
@@ -183,6 +180,7 @@ a:hover {
   display: flex;
   justify-content: center;
   width: 100%;
+  gap: 1.5rem;
 }
 .coin-list-pages button {
   margin-top: 2rem;

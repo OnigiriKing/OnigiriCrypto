@@ -43,7 +43,6 @@
   }
 }
 
-
 // ! CoinList
 
 #coin-list-page {
@@ -83,7 +82,6 @@
   text-align: right;
   align-items: center;
   border-bottom: 1px solid #fff;
-  
 
   .coin-info-img {
     display: flex;
@@ -94,23 +92,21 @@
       width: 3rem;
     }
   }
-
-
 }
 
 .coin-list-pages {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 1.5rem;
 
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-    button {
+  button {
     margin-top: 2rem;
-    padding: .5rem;
+    padding: 0.5rem;
     border-radius: 20rem;
     font-size: 1.5rem;
   }
-  }
+}
 
 // ! Choose us screen
 #choose-us-screen {
@@ -129,11 +125,10 @@
   h1 {
     font-size: 3rem;
     b {
-     @include gradient;
+      @include gradient;
     }
   }
 }
-
 
 .choose-us-body {
   display: flex;
@@ -166,7 +161,7 @@
   background: $gradient-colors;
 
   svg {
-    background: transparent
+    background: transparent;
   }
 }
 

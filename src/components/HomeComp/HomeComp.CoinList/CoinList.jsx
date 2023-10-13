@@ -41,6 +41,7 @@ export default function CoinList() {
          </div>
          <div className="coin-list-pages">
            <button>1</button>
+           <button>2</button>
          </div>
        </div>
      </div>
