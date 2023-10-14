@@ -5,7 +5,7 @@
   transition: all 0.2s;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background-color: #000;
+  background-color: #000000;
 }
 
 body {
@@ -21,24 +21,16 @@ body {
   margin: 0 2rem;
 }
 
-path, svg {
-  transition: none;
-}
-
-svg:hover {
-  color: rgba(125, 188, 255, 0.6);
-}
-
-a {
+a, path {
   text-decoration: none;
   cursor: pointer;
-  transition: color 0.5s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
-a:hover {
-  background-image: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+a:hover, path:hover {
+  color: rgb(1, 167, 129);
+}
+a:hover path, path:hover path {
+  color: rgb(1, 167, 129);
 }
 
 .header-page {
