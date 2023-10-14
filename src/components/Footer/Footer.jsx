@@ -1,6 +1,7 @@
 import React from "react";
-import allSvg from "svg/headerFooterSvg";
+import otherSvg from "svg/otherSvg";
 import bfxLogo from "img/footer/bfxLogo.png";
+import ApiStatus from "API/FetchApiStatus";
 
 export default function Footer() {
   return (
@@ -9,15 +10,18 @@ export default function Footer() {
         <img></img>
         <div className="footer-all-links">
           <div className="footer-social">
-            <a href="#">{allSvg(10).twitter}</a>
-            <a href="#">{allSvg(10).discord}</a>
-            <a href="#">{allSvg(10).facebook}</a>
-            <a href="#">{allSvg(10).youTube}</a>
+            <a href="#">{otherSvg(10).twitter}</a>
+            <a href="#">{otherSvg(10).discord}</a>
+            <a href="#">{otherSvg(10).facebook}</a>
+            <a href="#">{otherSvg(10).youTube}</a>
           </div>
           <div className="footer-terms">
             <a href="#">Privacy</a>
             <a href="#">Terms of Use</a>
           </div>
+          <h4>
+            <ApiStatus />
+          </h4>
           <h3>
             Powered by the
             <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
