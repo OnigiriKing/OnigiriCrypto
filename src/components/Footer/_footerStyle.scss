@@ -31,3 +31,20 @@
     }
   }
 }
+
+.apiStatus {
+
+  // h5 {
+  //   display: flex;
+  //   gap: .5rem;
+  // }
+
+
+  .apiOnline {
+    color: $bg-color-green;
+  }
+
+  .apiOffline {
+     color: $bg-color-red;
+  }
+}

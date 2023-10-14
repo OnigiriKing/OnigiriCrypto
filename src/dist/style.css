@@ -83,6 +83,13 @@ a:hover path, path:hover path {
   width: 1.5rem;
 }
 
+.apiStatus .apiOnline {
+  color: rgb(1, 167, 129);
+}
+.apiStatus .apiOffline {
+  color: rgb(228, 75, 68);
+}
+
 #body-page {
   width: 100%;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import otherSvg from "svg/otherSvg";
 
 export default function ApiStatus() {
   const [apiStatus, setStatus] = React.useState(1);
@@ -18,11 +19,13 @@ export default function ApiStatus() {
   }, []);
 
   return (
-    <div className="ApiStatus">
-      <h3 className={apiStatus == 1 ? "ApiOnline" : "ApiOffline"}>•</h3>
-      <h5>Server is {apiStatus == 1 ? "online" : "ofline"}</h5>
+    <div className="apiStatus">
+      <h5>
+        Server is
+        <b className={apiStatus == 1 ? "apiOnline" : "apiOffline"}>
+          {apiStatus == 1 ? " online" : " ofline"}
+        </b>
+      </h5>
     </div>
   );
 }
-
-
