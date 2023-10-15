@@ -305,4 +305,9 @@ a:hover path, path:hover path {
   margin-top: 2rem;
   padding: 1rem;
   border-radius: 20rem;
+}
+
+#coin-page {
+  width: 100%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
