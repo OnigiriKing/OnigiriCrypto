@@ -5,13 +5,13 @@
   transition: all 0.2s;
   font-family: "Roboto", sans-serif;
   color: #fff;
-  background-color: #000000;
 }
 
 body {
   width: 100%;
   height: 100%;
   position: relative;
+  background: linear-gradient(to top, rgb(0, 0, 0), rgb(23, 45, 62));
 }
 
 .wrapper {
@@ -19,6 +19,10 @@ body {
   max-width: 70rem;
   padding: 2rem 0rem;
   margin: 0 2rem;
+}
+
+button {
+  background: transparent;
 }
 
 a, path {
@@ -34,7 +38,6 @@ a:hover path, path:hover path {
 }
 
 .header-page {
-  background-color: #000;
   width: 100%;
   height: 8rem;
   display: flex;
@@ -58,7 +61,6 @@ a:hover path, path:hover path {
 #footer-page {
   background-color: transparent;
   width: 100%;
-  height: 8rem;
   display: flex;
   justify-content: center;
 }

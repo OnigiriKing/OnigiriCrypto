@@ -3,9 +3,9 @@
 #footer-page {
   background-color: transparent;
   width: 100%;
-  height: 8rem;
   display: flex;
   justify-content: center;
+
 
   .footer-all-links {
     display: flex;
@@ -33,12 +33,6 @@
 }
 
 .apiStatus {
-
-  // h5 {
-  //   display: flex;
-  //   gap: .5rem;
-  // }
-
 
   .apiOnline {
     color: $bg-color-green;
