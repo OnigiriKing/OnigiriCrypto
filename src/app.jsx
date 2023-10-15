@@ -13,7 +13,7 @@ export default function App() {
       <HeaderPage />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/coin/:id" element={<CoinPage />} />
+        <Route path="/coin/:coinType" element={<CoinPage />} />
       </Routes>
       <FooterPage />
     </>
