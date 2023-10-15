@@ -1,5 +1,6 @@
 import CoinPrice from "common/api/getCoinPrice";
 import { coinList } from "common/data/coinsData";
+import { Link } from "react-router-dom";
 
 export default function CoinList() {
 
@@ -7,7 +8,7 @@ export default function CoinList() {
     return Object.keys(coinList).map((key) => {
       const el = coinList[key];
       return (
-        <div className="coin-info">
+        <Link to={`/coin/${key}`} className="coin-info">
           <div className="coin-info-img">
             <img src={el.img} alt={el.name} />
             <h3>{el.name}</h3>
@@ -21,7 +22,7 @@ export default function CoinList() {
           <h3>
             $ <CoinPrice crypto={el.sigh} type="7" />
           </h3>
-        </div>
+        </Link>
       );
     });
   }

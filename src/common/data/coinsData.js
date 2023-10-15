@@ -22,7 +22,7 @@ export const welcomeCoins = {
     img: leoImg,
   },
   AVAX: {
-    name: "AVAX",
+    name: "Avalanche",
     sigh: "AVAX:",
     img: avaxImg,
   },
@@ -41,7 +41,7 @@ export const coinList = {
     img: ethImg,
   },
   AVAX: {
-    name: "AVAX",
+    name: "Avalanche",
     sigh: "AVAX:",
     img: avaxImg,
   },
