@@ -82,14 +82,25 @@
   text-align: right;
   align-items: center;
   border-bottom: 1px solid #fff;
+  cursor: pointer;
+
+  h3 {
+    background: transparent;
+  }
+
+  &:hover {
+    background: $bg-color-light;
+  }
 
   .coin-info-img {
     display: flex;
     align-items: center;
     gap: 1rem;
+    background: transparent;
 
     img {
       width: 3rem;
+      background: transparent;
     }
   }
 }

@@ -165,14 +165,23 @@ a:hover path, path:hover path {
   text-align: right;
   align-items: center;
   border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+.coin-info h3 {
+  background: transparent;
+}
+.coin-info:hover {
+  background: rgb(23, 45, 62);
 }
 .coin-info .coin-info-img {
   display: flex;
   align-items: center;
   gap: 1rem;
+  background: transparent;
 }
 .coin-info .coin-info-img img {
   width: 3rem;
+  background: transparent;
 }
 
 .coin-list-pages {
