@@ -310,4 +310,25 @@ a:hover path, path:hover path {
 #coin-page {
   width: 100%;
   display: flex;
+  justify-content: center;
+}
+
+.coin-page-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.coin-image-name {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding-right: 3rem;
+  border-right: 1px solid #fff;
+  align-items: center;
+}
+.coin-image-name img {
+  width: 15rem;
+}
+.coin-image-name h3 {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
