@@ -2,11 +2,13 @@
     width: 100%;
   display: flex;
   justify-content: center;
+  height: 60vh;
 }
 
 .coin-page-wrapper {
     display: flex;
     flex-direction: row;
+    height: fit-content;
 }
 
 .coin-page-image {
@@ -17,7 +19,7 @@
     border-right: 1px solid #fff;
     align-items: center;
     img {
-        width: 15rem;
+        width: 14rem;
     }
 
     h3 {
@@ -29,10 +31,16 @@
     display: flex;
     width: 100%;
     flex-direction: column;
+    margin: 0rem 3rem;
 }
 
 .coin-page-price {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.coin-page-des {
+    font-size: 1.1rem;
 }

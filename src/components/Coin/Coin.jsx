@@ -28,7 +28,7 @@ export default function Coin() {
                Volume: $<CoinPrice crypto={coin} type="7" />
              </h3>
            </div>
-           <div className="coin-page-des"></div>
+           <div className="coin-page-des">{element.des}</div>
          </div>
        </div>
      </div>

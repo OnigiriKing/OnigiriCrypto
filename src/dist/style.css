@@ -311,11 +311,13 @@ a:hover path, path:hover path {
   width: 100%;
   display: flex;
   justify-content: center;
+  height: 60vh;
 }
 
 .coin-page-wrapper {
   display: flex;
   flex-direction: row;
+  height: fit-content;
 }
 
 .coin-page-image {
@@ -327,7 +329,7 @@ a:hover path, path:hover path {
   align-items: center;
 }
 .coin-page-image img {
-  width: 15rem;
+  width: 14rem;
 }
 .coin-page-image h3 {
   font-size: 1.5rem;
@@ -337,10 +339,16 @@ a:hover path, path:hover path {
   display: flex;
   width: 100%;
   flex-direction: column;
+  margin: 0rem 3rem;
 }
 
 .coin-page-price {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.coin-page-des {
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */
