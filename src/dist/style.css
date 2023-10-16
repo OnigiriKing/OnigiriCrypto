@@ -318,7 +318,7 @@ a:hover path, path:hover path {
   flex-direction: row;
 }
 
-.coin-image-name {
+.coin-page-image {
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -326,9 +326,21 @@ a:hover path, path:hover path {
   border-right: 1px solid #fff;
   align-items: center;
 }
-.coin-image-name img {
+.coin-page-image img {
   width: 15rem;
 }
-.coin-image-name h3 {
+.coin-page-image h3 {
   font-size: 1.5rem;
+}
+
+.coin-page-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.coin-page-price {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
