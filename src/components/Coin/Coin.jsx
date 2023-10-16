@@ -19,13 +19,13 @@ export default function Coin() {
          <div className="coin-page-info">
            <div className="coin-page-price">
              <h3>
-               Price: <CoinPrice crypto={coin} />
+               Price: $<CoinPrice crypto={coin} />
              </h3>
              <h3>
                24h Change: <CoinPrice crypto={coin} type="4" />%
              </h3>
              <h3>
-               Volume: <CoinPrice crypto={coin} type="7" />
+               Volume: $<CoinPrice crypto={coin} type="7" />
              </h3>
            </div>
            <div className="coin-page-des"></div>
