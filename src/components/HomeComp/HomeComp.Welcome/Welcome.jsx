@@ -12,7 +12,7 @@ export default function Welcome() {
    return Object.keys(welcomeCoins).map((key) => {
       const el = welcomeCoins[key];
       return (
-        <Link to="/">
+        <Link to={`/coin/${key}`}>
           <img src={el.img}></img>
           <div>{el.name}</div>
           <h3>
