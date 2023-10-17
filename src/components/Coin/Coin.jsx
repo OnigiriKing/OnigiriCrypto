@@ -11,10 +11,11 @@ export default function Coin() {
    return (
      <div id="coin-page">
        <div className="wrapper coin-page-wrapper">
+         <div>return</div>
          <div className="coin-page-image">
            <img src={element.img}></img>
            <h3>{element.name}</h3>
-           <h3>Rank #1</h3>
+           <h3>Rank #{element.rank}</h3>
          </div>
          <div className="coin-page-info">
            <div className="coin-page-price">
