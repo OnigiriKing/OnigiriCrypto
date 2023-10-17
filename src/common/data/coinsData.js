@@ -34,7 +34,7 @@ export const coinList = {
     name: "Bitcoin",
     sigh: "BTC",
     img: btcImg,
-    des: "Bitcoin is a cryptocurrency launched in January 2009, where the first genesis block was mined on 9th January 2009. It is a decentralized digital currency that is based on cryptography. ",
+    des: "Bitcoin is a cryptocurrency launched in January 2009, where the first genesis block was mined on 9th January 2009. It is a decentralized digital currency that is based on cryptography.",
     rank: "1"
   },
   ETH: {

@@ -315,10 +315,20 @@ a:hover path, path:hover path {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 60vh;
+  height: 59vh;
 }
 
-.coin-page-wrapper {
+.coin-page-home-btn {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  font-size: 1.2rem;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+}
+
+.coin-page-info-wrapper {
   display: flex;
   flex-direction: row;
   height: fit-content;
