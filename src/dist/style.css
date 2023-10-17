@@ -51,6 +51,10 @@ a:hover path, path:hover path {
   color: white;
 }
 
+.header-name a {
+  font-size: 1.5rem;
+}
+
 .header-links, .header-social {
   display: flex;
   gap: 1.5rem;
