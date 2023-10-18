@@ -365,4 +365,12 @@ a:hover path, path:hover path {
 
 .coin-page-des {
   font-size: 1.1rem;
+}
+
+.price-red {
+  color: red;
+}
+
+.price-green {
+  color: green;
 }/*# sourceMappingURL=style.css.map */

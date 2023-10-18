@@ -3,6 +3,7 @@ import allSvg from "svg/otherSvg";
 import { Link } from "react-router-dom";
 
 export default function Header() {
+
   return (
     <header className="header-page">
       <div className="wrapper header-footer-wrapper">

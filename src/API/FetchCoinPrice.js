@@ -15,7 +15,6 @@ export default function CoinPrice({ crypto, type=6 }) {
       const response = await axios.get(
         `http://localhost:3000/api/${crypto}-price`
       );
-      console.log(response.data)
       setPrice(response.data);
     } catch (error) {
       console.error(error);
@@ -35,9 +34,19 @@ export default function CoinPrice({ crypto, type=6 }) {
     };
   }, [crypto]);
 
-  return (
-    <>
-      {price[type]}
-    </>
-  );
+  const percent = price[4];
+
+  if (type === "4") {
+    return (
+      <b className={type === "4" && percent < 0 ? "price-red" : "price-green"}>
+        {price[type]}%
+      </b>
+    );
+  } else {
+    return (
+      <b className={type === "4" && percent < 0 ? "price-red" : "price-green"}>
+        ${price[type]}
+      </b>
+    );
+  }
 }
