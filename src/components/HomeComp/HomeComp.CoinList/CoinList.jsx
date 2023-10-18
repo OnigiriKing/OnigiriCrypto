@@ -13,13 +13,13 @@ export default function CoinList() {
             <h3>{el.name}</h3>
           </div>
           <h3>
-            $<CoinPrice crypto={el.sigh} />
+            <CoinPrice crypto={el.sigh} />
           </h3>
           <h3 className="coin-info-persantage">
-            <CoinPrice crypto={el.sigh} type="4" />%
+            <CoinPrice crypto={el.sigh} type="4" />
           </h3>
           <h3>
-            $ <CoinPrice crypto={el.sigh} type="7" />
+            <CoinPrice crypto={el.sigh} type="7" />
           </h3>
         </Link>
       );
