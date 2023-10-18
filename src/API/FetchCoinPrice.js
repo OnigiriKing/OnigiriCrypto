@@ -44,7 +44,7 @@ export default function CoinPrice({ crypto, type=6 }) {
     );
   } else {
     return (
-      <b className={type === "4" && percent < 0 ? "price-red" : "price-green"}>
+      <b>
         ${price[type]}
       </b>
     );

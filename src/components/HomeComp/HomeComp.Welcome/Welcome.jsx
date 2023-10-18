@@ -15,7 +15,7 @@ export default function Welcome() {
           <img src={el.img}></img>
           <div>{el.name}</div>
           <h3>
-            $<CoinPrice crypto={el.sigh} />
+            <CoinPrice crypto={el.sigh} />
           </h3>
         </Link>
       );
