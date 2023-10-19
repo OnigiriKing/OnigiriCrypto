@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function CoinList() {
   function DisplayCoins() {
-    return Object.keys(coinList).map((key) => {
+    return Object.keys(coinList).slice().map((key) => {
       const el = coinList[key];
       return (
         <Link to={`/coin/${key}`} className="coin-info">
