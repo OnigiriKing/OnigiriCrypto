@@ -1,10 +1,13 @@
 import CoinPrice from "API/FetchCoinPrice";
 import { coinList } from "common/data/coinsData";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function CoinList() {
+
+  const [page, setPage] = useState([1, 7])
   function DisplayCoins() {
-    return Object.keys(coinList).slice().map((key) => {
+    return Object.keys(coinList).slice(...page).map((key) => {
       const el = coinList[key];
       return (
         <Link to={`/coin/${key}`} className="coin-info">
