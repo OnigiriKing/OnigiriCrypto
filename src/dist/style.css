@@ -311,6 +311,10 @@ a:hover path, path:hover path {
   border-radius: 20rem;
 }
 
+.btn-active {
+  background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
+}
+
 #coin-page {
   width: 100%;
   display: flex;

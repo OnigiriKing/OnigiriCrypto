@@ -43,8 +43,18 @@ export default function CoinList() {
           <DisplayCoins />
         </div>
         <div className="coin-list-pages">
-          <button onClick={() => setPage([0, 6])}>1</button>
-          <button onClick={() => setPage([6, 12])}>2</button>
+          <button
+            className={page[0] == 0 ? "btn-active" : ""}
+            onClick={() => setPage([0, 6])}
+          >
+            1
+          </button>
+          <button
+            className={page[0] == 6 ? "btn-active" : ""}
+            onClick={() => setPage([6, 12])}
+          >
+            2
+          </button>
         </div>
       </div>
     </div>
