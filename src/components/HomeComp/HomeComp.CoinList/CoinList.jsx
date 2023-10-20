@@ -5,7 +5,7 @@ import { useState } from "react";
 
 export default function CoinList() {
 
-  const [page, setPage] = useState([1, 7])
+  const [page, setPage] = useState([0, 6])
   function DisplayCoins() {
     return Object.keys(coinList).slice(...page).map((key) => {
       const el = coinList[key];
@@ -43,8 +43,8 @@ export default function CoinList() {
           <DisplayCoins />
         </div>
         <div className="coin-list-pages">
-          <button>1</button>
-          <button>2</button>
+          <button onClick={() => setPage([0, 6])}>1</button>
+          <button onClick={() => setPage([6, 12])}>2</button>
         </div>
       </div>
     </div>
