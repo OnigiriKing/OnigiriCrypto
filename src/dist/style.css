@@ -201,6 +201,7 @@ a:hover path, path:hover path {
   padding: 0.5rem;
   border-radius: 20rem;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 #choose-us-screen {

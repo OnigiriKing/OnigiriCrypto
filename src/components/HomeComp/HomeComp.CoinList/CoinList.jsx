@@ -2,8 +2,15 @@ import CoinPrice from "API/FetchCoinPrice";
 import { coinList } from "common/data/coinsData";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { animateScroll } from "react-scroll";
 
 export default function CoinList() {
+
+  const scrollToElement = (elementName) => {
+    animateScroll.scrollTo(document.getElementById(elementName).offsetTop, {
+      duration: 50,
+    });
+  };
 
   const [page, setPage] = useState([0, 6])
   function DisplayCoins() {
@@ -45,13 +52,19 @@ export default function CoinList() {
         <div className="coin-list-pages">
           <button
             className={page[0] == 0 ? "btn-active" : ""}
-            onClick={() => setPage([0, 6])}
+            onClick={() => {
+              scrollToElement("coin-list-page");
+              setPage([0, 6]);
+            }}
           >
             1
           </button>
           <button
             className={page[0] == 6 ? "btn-active" : ""}
-            onClick={() => setPage([6, 12])}
+            onClick={() => {
+              scrollToElement("coin-list-page");
+              setPage([6, 12]);
+            }}
           >
             2
           </button>
