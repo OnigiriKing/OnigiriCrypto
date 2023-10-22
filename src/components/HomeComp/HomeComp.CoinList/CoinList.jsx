@@ -5,6 +5,7 @@ import { useState } from "react";
 import { animateScroll } from "react-scroll";
 
 export default function CoinList() {
+  
 
   const scrollToElement = (elementName) => {
     animateScroll.scrollTo(document.getElementById(elementName).offsetTop, {
@@ -13,6 +14,7 @@ export default function CoinList() {
   };
 
   const [page, setPage] = useState([0, 6])
+
   function DisplayCoins() {
     return Object.keys(coinList).slice(...page).map((key) => {
       const el = coinList[key];
@@ -34,6 +36,43 @@ export default function CoinList() {
         </Link>
       );
     });
+  }
+
+
+
+  function PageElement() {
+
+    const pageNumber = Math.ceil(Object.keys(coinList).length / 6);
+
+    for (let i = 1; i<pageNumber; i++) {
+      if (i == 1) {
+         return (
+           <button
+             className={page[0] == 0 ? "btn-active" : ""}
+             onClick={() => {
+               scrollToElement("coin-list-page");
+               setPage([0, 6]);
+             }}
+           >
+             2
+           </button>
+         );
+      } else {
+        const firstPage = i - 1 * 6;
+         return (
+           <button
+             className={page[0] == firstPage ? "btn-active" : ""}
+             onClick={() => {
+               scrollToElement("coin-list-page");
+               setPage([firstPage, firstPage+6]);
+             }}
+           >
+             {i+1}
+           </button>
+         );
+      }
+    }
+  
   }
 
   return (
