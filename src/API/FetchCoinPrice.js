@@ -36,17 +36,22 @@ export default function CoinPrice({ crypto, type=6 }) {
 
   const percent = price[4];
 
+
   if (type === "4") {
+    const formattedNumber = new Intl.NumberFormat("en-US", {
+      style: "decimal",
+      maximumFractionDigits: 1,
+    }).format(price[type]);
     return (
       <b className={type === "4" && percent < 0 ? "price-red" : "price-green"}>
-        {price[type]}%
+        {formattedNumber}%
       </b>
     );
   } else {
-    return (
-      <b>
-        ${price[type]}
-      </b>
-    );
+    const formattedNumber = new Intl.NumberFormat("en-US", {
+      style: "decimal",
+      maximumFractionDigits: 2,
+    }).format(price[type]);
+    return <b>${formattedNumber}</b>;
   }
 }
