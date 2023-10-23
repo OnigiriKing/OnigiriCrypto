@@ -41,38 +41,31 @@ export default function CoinList() {
 
 
   function PageElement() {
+    const itemsPerPage = 6;
+    const totalItems = Object.keys(coinList).length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    const pageNumber = Math.ceil(Object.keys(coinList).length / 6);
+    console.log(Array.from({ length: totalPages }));
 
-    for (let i = 1; i<pageNumber; i++) {
-      if (i == 1) {
-         return (
-           <button
-             className={page[0] == 0 ? "btn-active" : ""}
-             onClick={() => {
-               scrollToElement("coin-list-page");
-               setPage([0, 6]);
-             }}
-           >
-             2
-           </button>
-         );
-      } else {
-        const firstPage = i - 1 * 6;
-         return (
-           <button
-             className={page[0] == firstPage ? "btn-active" : ""}
-             onClick={() => {
-               scrollToElement("coin-list-page");
-               setPage([firstPage, firstPage+6]);
-             }}
-           >
-             {i+1}
-           </button>
-         );
-      }
-    }
-  
+    return (
+      <div>
+        {Array.from({ length: totalPages }).map((_, index) => {
+          const start = index * itemsPerPage;
+          return (
+            <button
+              key={index}
+              className={page[0] === start ? "btn-active" : ""}
+              onClick={() => {
+                scrollToElement("coin-list-page");
+                setPage([start, start + itemsPerPage]);
+              }}
+            >
+              {index + 1}
+            </button>
+          );
+        })}
+      </div>
+    );
   }
 
   return (
@@ -88,26 +81,7 @@ export default function CoinList() {
           </div>
           <DisplayCoins />
         </div>
-        <div className="coin-list-pages">
-          <button
-            className={page[0] == 0 ? "btn-active" : ""}
-            onClick={() => {
-              scrollToElement("coin-list-page");
-              setPage([0, 6]);
-            }}
-          >
-            1
-          </button>
-          <button
-            className={page[0] == 6 ? "btn-active" : ""}
-            onClick={() => {
-              scrollToElement("coin-list-page");
-              setPage([6, 12]);
-            }}
-          >
-            2
-          </button>
-        </div>
+        <div className="coin-list-pages"><PageElement /></div>
       </div>
     </div>
   );
