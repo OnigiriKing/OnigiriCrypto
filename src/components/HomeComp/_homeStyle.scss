@@ -23,6 +23,10 @@
   h2:nth-child(2) {
     @include gradient;
   }
+
+  @include bigWidth {
+    text-align: center;
+  }
 }
 
 .welcome-crypto {

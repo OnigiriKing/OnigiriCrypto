@@ -120,6 +120,11 @@ a:hover path, path:hover path {
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 990px) {
+  .welcome-message {
+    text-align: center;
+  }
+}
 
 .welcome-crypto {
   display: flex;
