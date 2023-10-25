@@ -125,12 +125,17 @@ a:hover path, path:hover path {
     text-align: center;
   }
 }
+@media (max-width: 740px) {
+  .welcome-message {
+    font-size: 2.5rem;
+  }
+}
 
 .welcome-crypto {
-  display: flex;
-  gap: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem 4rem;
 }
 .welcome-crypto a {
   display: flex;
@@ -140,6 +145,12 @@ a:hover path, path:hover path {
 }
 .welcome-crypto img {
   width: 5rem;
+}
+@media (max-width: 740px) {
+  .welcome-crypto {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+  }
 }
 
 #coin-list-page {

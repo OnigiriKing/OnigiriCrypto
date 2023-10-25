@@ -16,3 +16,11 @@ $bigWidth: 990px;
     @content;
   }
 }
+
+$mediumWidth: 740px;
+
+@mixin mediumWidth {
+  @media (max-width: $mediumWidth) {
+    @content;
+  }
+}

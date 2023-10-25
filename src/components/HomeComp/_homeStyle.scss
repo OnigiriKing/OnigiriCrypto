@@ -27,13 +27,17 @@
   @include bigWidth {
     text-align: center;
   }
+
+  @include mediumWidth {
+    font-size: 2.5rem;
+  }
 }
 
 .welcome-crypto {
-  display: flex;
-  gap: 7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem 4rem;
 
   a {
     display: flex;
@@ -44,6 +48,11 @@
 
   img {
     width: 5rem;
+  }
+
+  @include mediumWidth {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
   }
 }
 
