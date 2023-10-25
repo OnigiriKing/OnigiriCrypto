@@ -67,6 +67,11 @@
   h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+
+    @include bigWidth {
+    text-align: center;
+  }
+
   }
 }
 
@@ -115,6 +120,12 @@
       width: 3rem;
       background: transparent;
     }
+
+    @include mediumWidth {
+    h3 {
+      display: none;
+    }
+  }
   }
 }
 

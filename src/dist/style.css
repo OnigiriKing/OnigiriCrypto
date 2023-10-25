@@ -163,6 +163,11 @@ a:hover path, path:hover path {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
 }
+@media (max-width: 990px) {
+  .coin-list-wrapper h1 {
+    text-align: center;
+  }
+}
 
 .coin-list-table-banner {
   display: grid;
@@ -204,6 +209,11 @@ a:hover path, path:hover path {
 .coin-info .coin-info-img img {
   width: 3rem;
   background: transparent;
+}
+@media (max-width: 740px) {
+  .coin-info .coin-info-img h3 {
+    display: none;
+  }
 }
 
 .coin-list-pages {
