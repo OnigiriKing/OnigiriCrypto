@@ -158,6 +158,11 @@ a:hover path, path:hover path {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 640px) {
+  #coin-list-page .coin-list-volume {
+    display: none;
+  }
+}
 
 .coin-list-wrapper h1 {
   font-size: 2.5rem;

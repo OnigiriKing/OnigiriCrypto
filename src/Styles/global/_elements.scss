@@ -24,3 +24,12 @@ $mediumWidth: 740px;
     @content;
   }
 }
+
+
+$smallWidth: 640px;
+
+@mixin smallWidth {
+  @media (max-width: $smallWidth) {
+    @content;
+  }
+}

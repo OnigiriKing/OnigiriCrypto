@@ -62,6 +62,15 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @include smallWidth {
+    .coin-list-volume {
+      display: none;
+
+      div {
+      }
+    }
+  }
 }
 .coin-list-wrapper {
   h1 {
@@ -91,6 +100,9 @@
   h3:nth-child(1) {
     text-align: left;
   }
+
+
+
 }
 
 .coin-info {
@@ -109,6 +121,7 @@
   &:hover {
     background: $bg-color-light;
   }
+  
 
   .coin-info-img {
     display: flex;
@@ -127,6 +140,7 @@
     }
   }
   }
+
 }
 
 .coin-list-pages {

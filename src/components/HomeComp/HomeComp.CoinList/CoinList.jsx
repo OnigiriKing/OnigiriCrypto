@@ -30,7 +30,7 @@ export default function CoinList() {
           <h3 className="coin-info-persantage">
             <CoinPrice crypto={el.sigh} type="4" />
           </h3>
-          <h3>
+          <h3 className="coin-list-volume">
             <CoinPrice crypto={el.sigh} type="7" />
           </h3>
         </Link>
@@ -77,11 +77,13 @@ export default function CoinList() {
             <h3>Coin</h3>
             <h3>Price</h3>
             <h3>24h Change</h3>
-            <h3>Volume</h3>
+            <h3 className="coin-list-volume">Volume</h3>
           </div>
           <DisplayCoins />
         </div>
-        <div className="coin-list-pages"><PageElement /></div>
+        <div className="coin-list-pages">
+          <PageElement />
+        </div>
       </div>
     </div>
   );
