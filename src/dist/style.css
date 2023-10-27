@@ -267,6 +267,13 @@ a:hover path, path:hover path {
   color: transparent;
 }
 
+@media (max-width: 640px) {
+  .choose-us-baner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .choose-us-body {
   display: flex;
   flex-direction: row;
