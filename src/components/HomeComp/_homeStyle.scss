@@ -66,9 +66,6 @@
   @include smallWidth {
     .coin-list-volume {
       display: none;
-
-      div {
-      }
     }
   }
 }
@@ -84,14 +81,25 @@
   }
 }
 
-.coin-list-table-banner {
+.coin-list-table-banner, .coin-info {
   display: grid;
   grid-template-columns: 14fr 20fr 20fr 20fr;
-  background: $gradient-colors;
   padding: 1rem 1rem;
+  text-align: right;
+
+  @include smallWidth {
+ grid-template-columns: 14fr 20fr 20fr;
+  }
+}
+
+.coin-list-table-banner {
+  background: $gradient-colors;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  text-align: right;
+
+  @include smallWidth {
+ grid-template-columns: 14fr 20fr 20fr;
+  }
 
   h3 {
     background: transparent;
@@ -106,10 +114,6 @@
 }
 
 .coin-info {
-  padding: 1rem 1rem;
-  display: grid;
-  grid-template-columns: 14fr 20fr 20fr 20fr;
-  text-align: right;
   align-items: center;
   border-bottom: 1px solid #fff;
   cursor: pointer;
