@@ -259,6 +259,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .join-us-wrapper {
@@ -279,6 +280,8 @@
 
     @include smallWidth {
       text-align: center;
+      font-size: 3rem;
+
 }
   }
 

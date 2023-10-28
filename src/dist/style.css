@@ -333,6 +333,7 @@ a:hover path, path:hover path {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .join-us-wrapper {
@@ -356,6 +357,7 @@ a:hover path, path:hover path {
 @media (max-width: 640px) {
   .join-us-wrapper h2 {
     text-align: center;
+    font-size: 3rem;
   }
 }
 .join-us-wrapper button {
