@@ -276,6 +276,10 @@
     b {
       @include gradient;
     }
+
+    @include smallWidth {
+      text-align: center;
+}
   }
 
   button {

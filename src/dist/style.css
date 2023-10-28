@@ -353,6 +353,11 @@ a:hover path, path:hover path {
   background-clip: text;
   color: transparent;
 }
+@media (max-width: 640px) {
+  .join-us-wrapper h2 {
+    text-align: center;
+  }
+}
 .join-us-wrapper button {
   margin-top: 2rem;
   padding: 1rem;
