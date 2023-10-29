@@ -89,6 +89,7 @@
 
   @include smallWidth {
  grid-template-columns: 14fr 20fr 20fr;
+ text-align: center;
   }
 }
 
@@ -96,10 +97,6 @@
   background: $gradient-colors;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-
-  @include smallWidth {
- grid-template-columns: 14fr 20fr 20fr;
-  }
 
   h3 {
     background: transparent;

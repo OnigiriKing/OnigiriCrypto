@@ -183,6 +183,7 @@ a:hover path, path:hover path {
 @media (max-width: 640px) {
   .coin-list-table-banner, .coin-info {
     grid-template-columns: 14fr 20fr 20fr;
+    text-align: center;
   }
 }
 
@@ -190,11 +191,6 @@ a:hover path, path:hover path {
   background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-}
-@media (max-width: 640px) {
-  .coin-list-table-banner {
-    grid-template-columns: 14fr 20fr 20fr;
-  }
 }
 .coin-list-table-banner h3 {
   background: transparent;
