@@ -32,6 +32,13 @@
     @include smallWidth {
       display: none;
   }
+}
 
+.header-menu-btn {
+    display: none;
+
+    @include smallWidth {
+      display: flex;
+  }
 }
 

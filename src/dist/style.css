@@ -67,6 +67,15 @@ a:hover path, path:hover path {
   }
 }
 
+.header-menu-btn {
+  display: none;
+}
+@media (max-width: 640px) {
+  .header-menu-btn {
+    display: flex;
+  }
+}
+
 #footer-page {
   background-color: transparent;
   width: 100%;

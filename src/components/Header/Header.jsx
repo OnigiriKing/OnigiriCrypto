@@ -20,6 +20,9 @@ export default function Header() {
           <a href="#">{allSvg(10).twitter}</a>
           <a href="#">{allSvg(10).youTube}</a>
         </div>
+        <div className="header-menu-btn">
+          <div>{allSvg(30).menu}</div>
+        </div>
       </div>
     </header>
   );
