@@ -61,6 +61,11 @@ a:hover path, path:hover path {
   font-size: 1.1rem;
   font-weight: 600;
 }
+@media (max-width: 640px) {
+  .header-links, .header-social {
+    display: none;
+  }
+}
 
 #footer-page {
   background-color: transparent;
