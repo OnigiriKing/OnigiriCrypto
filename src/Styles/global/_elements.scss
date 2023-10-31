@@ -9,6 +9,15 @@
 
 // width
 
+
+$wideWidth: 1060px;
+
+@mixin wideWidth {
+  @media (max-width: $wideWidth) {
+    @content;
+  }
+}
+
 $bigWidth: 990px;
 
 @mixin bigWidth {
