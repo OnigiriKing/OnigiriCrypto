@@ -144,6 +144,11 @@ a:hover path, path:hover path {
     font-size: 2.5rem;
   }
 }
+@media (max-width: 640px) {
+  .welcome-message {
+    font-size: 2.2rem;
+  }
+}
 
 .welcome-crypto {
   display: grid;
