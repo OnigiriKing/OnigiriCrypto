@@ -404,7 +404,6 @@ a:hover path, path:hover path {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 59vh;
 }
 
 .coin-page-home-btn {
@@ -421,6 +420,12 @@ a:hover path, path:hover path {
   display: flex;
   flex-direction: row;
   height: fit-content;
+}
+@media (max-width: 990px) {
+  .coin-page-info-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .coin-page-image {

@@ -1,8 +1,10 @@
+@use "/Users/nikitawr/Dev/onigiri_crypto/src/Styles/global" as *;
+
+
 #coin-page {
     width: 100%;
   display: flex;
   justify-content: center;
-  height: 59vh;
 }
 
 .coin-page-home-btn {
@@ -19,6 +21,11 @@
     display: flex;
     flex-direction: row;
     height: fit-content;
+
+    @include bigWidth {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 .coin-page-image {
