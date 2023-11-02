@@ -425,6 +425,7 @@ a:hover path, path:hover path {
   .coin-page-info-wrapper {
     flex-direction: column;
     text-align: center;
+    align-items: center;
   }
 }
 
@@ -435,6 +436,14 @@ a:hover path, path:hover path {
   padding-right: 3rem;
   border-right: 1px solid #fff;
   align-items: center;
+}
+@media (max-width: 990px) {
+  .coin-page-image {
+    border-right: none;
+    padding-right: none;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #fff;
+  }
 }
 .coin-page-image img {
   width: 14rem;
@@ -448,6 +457,11 @@ a:hover path, path:hover path {
   width: 100%;
   flex-direction: column;
   margin: 0rem 3rem;
+}
+@media (max-width: 990px) {
+  .coin-page-info {
+    margin-top: 2rem;
+  }
 }
 
 .coin-page-price {
