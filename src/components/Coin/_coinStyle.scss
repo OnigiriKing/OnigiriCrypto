@@ -15,6 +15,10 @@
     align-items: center;
     gap: .5rem;
     width: fit-content;
+
+    @include bigWidth {
+    margin-left: 0rem;
+  }
 }
 
 .coin-page-info-wrapper {

@@ -415,6 +415,11 @@ a:hover path, path:hover path {
   gap: 0.5rem;
   width: fit-content;
 }
+@media (max-width: 990px) {
+  .coin-page-home-btn {
+    margin-left: 0rem;
+  }
+}
 
 .coin-page-info-wrapper {
   display: flex;
