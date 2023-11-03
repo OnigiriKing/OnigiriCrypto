@@ -246,6 +246,14 @@
   img {
     width: 20rem;
   }
+
+   @include smallWidth {
+    width: 70%;
+
+    img {
+    width: 100%;
+    }
+}
 }
 
 .choose-reason-text {

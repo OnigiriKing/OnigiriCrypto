@@ -341,6 +341,14 @@ a:hover path, path:hover path {
 .choose-us-img img {
   width: 20rem;
 }
+@media (max-width: 640px) {
+  .choose-us-img {
+    width: 70%;
+  }
+  .choose-us-img img {
+    width: 100%;
+  }
+}
 
 .choose-reason-text {
   background: transparent;
