@@ -4,6 +4,9 @@ export default function DropMenu() {
   return (
     <div id="drop-menu">
       <div className="drop-menu-wrapper">
+        <div className="drop-menu-btn">
+            {allSvg(40).closeBtn}
+        </div>
         <div className="drop-menu-nav-links">
           <a href="/#welcome-screen">Home</a>
           <a href="/#coin-list-page">Market</a>
