@@ -1,11 +1,13 @@
 import React from "react";
 import allSvg from "svg/otherSvg";
 import { Link } from "react-router-dom";
+import DropMenu from "./Header.DropMenu/DropMenu";
 
 export default function Header() {
 
   return (
     <header className="header-page">
+    <DropMenu />
       <div className="wrapper header-footer-wrapper">
         <div className="header-name">
           <Link to={"/"}>Onigiri Crypto</Link>
