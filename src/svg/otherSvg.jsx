@@ -3,8 +3,8 @@ export default function otherSvg(width) {
     twitter: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width={width}
+        height={width}
         viewBox="0 0 24 24"
       >
         <path
@@ -16,8 +16,8 @@ export default function otherSvg(width) {
     facebook: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width={width}
+        height={width}
         viewBox="0 0 24 24"
       >
         <path
@@ -29,8 +29,8 @@ export default function otherSvg(width) {
     discord: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width={width}
+        height={width}
         viewBox="0 0 24 24"
       >
         <path
@@ -42,8 +42,8 @@ export default function otherSvg(width) {
     youTube: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
+        width={width}
+        height={width}
         viewBox="0 0 24 24"
       >
         <path

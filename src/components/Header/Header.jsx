@@ -19,8 +19,8 @@ export default function Header() {
           <a href="/#join-us-screen">Join</a>
         </div>
         <div className="header-social">
-          <a href="#">{allSvg(10).twitter}</a>
-          <a href="#">{allSvg(10).youTube}</a>
+          <a href="#">{allSvg(20).twitter}</a>
+          <a href="#">{allSvg(20).youTube}</a>
         </div>
         <div className="header-menu-btn">
           <div>{allSvg(30).menu}</div>
