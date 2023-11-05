@@ -103,6 +103,9 @@ a:hover path, path:hover path {
   right: 1.7rem;
   cursor: pointer;
 }
+.drop-menu-btn:hover path {
+  color: rgb(1, 167, 129);
+}
 
 .menu-open {
   transform: translateY(0%);

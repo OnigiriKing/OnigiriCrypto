@@ -70,6 +70,13 @@
   top: 2.2rem;
   right: 1.7rem;
   cursor: pointer;
+
+  &:hover {
+    path {
+       color: $bg-color-green;
+    }
+  }
+
 }
 
 .menu-open {
