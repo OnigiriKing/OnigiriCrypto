@@ -2,12 +2,13 @@ import React from "react";
 import allSvg from "svg/otherSvg";
 import { Link } from "react-router-dom";
 import DropMenu from "./Header.DropMenu/DropMenu";
+import { handleMenuClick } from "common/utils/changeClass";
 
 export default function Header() {
 
   return (
     <header className="header-page">
-    <DropMenu />
+      <DropMenu />
       <div className="wrapper header-footer-wrapper">
         <div className="header-name">
           <Link to={"/"}>Onigiri Crypto</Link>
@@ -22,7 +23,7 @@ export default function Header() {
           <a href="#">{allSvg(20).twitter}</a>
           <a href="#">{allSvg(20).youTube}</a>
         </div>
-        <div className="header-menu-btn">
+        <div className="header-menu-btn" onClick={() => handleMenuClick()}>
           <div>{allSvg(30).menu}</div>
         </div>
       </div>

@@ -8,3 +8,8 @@ export function changeClass(baseClass, newClass, check=true) {
         : classList.add(newClass)
       : classList.add(newClass);
   };
+
+
+  export const handleMenuClick = function () {
+    changeClass(".drop-menu-wrapper", "menu-open");
+  };

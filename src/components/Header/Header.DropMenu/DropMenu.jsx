@@ -1,15 +1,26 @@
 import allSvg from "svg/otherSvg";
+import { handleMenuClick } from "common/utils/changeClass";
 
 export default function DropMenu() {
   return (
     <div id="drop-menu">
       <div className="drop-menu-wrapper">
-        <div className="drop-menu-btn">{allSvg(40).closeBtn}</div>
+        <div className="drop-menu-btn" onClick={() => handleMenuClick()}>
+          {allSvg(40).closeBtn}
+        </div>
         <div className="drop-menu-nav-links">
-          <a href="/#welcome-screen">Home</a>
-          <a href="/#coin-list-page">Market</a>
-          <a href="/#choose-us-screen">Choose Us</a>
-          <a href="/#join-us-screen">Join</a>
+          <a href="/#welcome-screen" onClick={() => handleMenuClick()}>
+            Home
+          </a>
+          <a href="/#coin-list-page" onClick={() => handleMenuClick()}>
+            Market
+          </a>
+          <a href="/#choose-us-screen" onClick={() => handleMenuClick()}>
+            Choose Us
+          </a>
+          <a href="/#join-us-screen" onClick={() => handleMenuClick()}>
+            Join
+          </a>
         </div>
         <div className="drop-menu-social">
           <a href="#">{allSvg(35).twitter}</a>
