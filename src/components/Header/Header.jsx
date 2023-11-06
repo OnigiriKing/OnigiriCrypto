@@ -20,8 +20,8 @@ export default function Header() {
           <a href="/#join-us-screen">Join</a>
         </div>
         <div className="header-social">
-          <a href="#">{allSvg(20).twitter}</a>
-          <a href="#">{allSvg(20).youTube}</a>
+          <a href="#">{allSvg(25).twitter}</a>
+          <a href="#">{allSvg(25).youTube}</a>
         </div>
         <div className="header-menu-btn" onClick={() => handleMenuClick()}>
           <div>{allSvg(30).menu}</div>

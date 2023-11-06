@@ -10,10 +10,10 @@ export default function Footer() {
         <img></img>
         <div className="footer-all-links">
           <div className="footer-social">
-            <a href="#">{otherSvg(10).twitter}</a>
-            <a href="#">{otherSvg(10).discord}</a>
-            <a href="#">{otherSvg(10).facebook}</a>
-            <a href="#">{otherSvg(10).youTube}</a>
+            <a href="#">{otherSvg(25).twitter}</a>
+            <a href="#">{otherSvg(25).discord}</a>
+            <a href="#">{otherSvg(25).facebook}</a>
+            <a href="#">{otherSvg(25).youTube}</a>
           </div>
           <div className="footer-terms">
             <a href="#">Privacy</a>
