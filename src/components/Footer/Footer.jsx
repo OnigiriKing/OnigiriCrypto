@@ -27,7 +27,7 @@ export default function Footer() {
             <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
               Bitfinex
             </a>{" "}
-            API <img src={bfxLogo} />
+            API <img src={bfxLogo} alt="Logo" />
           </h3>
         </div>
         <img></img>

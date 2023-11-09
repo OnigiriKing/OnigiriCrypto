@@ -16,7 +16,7 @@ export default function Coin() {
         </Link>
         <div className="coin-page-info-wrapper">
           <div className="coin-page-image">
-            <img src={element.img}></img>
+            <img src={element.img} alt={element.name}></img>
             <h3>{element.name}</h3>
             <h3>Rank #{element.rank}</h3>
           </div>

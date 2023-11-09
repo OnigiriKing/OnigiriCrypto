@@ -8,7 +8,7 @@ export default function CoinPrice({ crypto, type=6 }) {
 
   React.useEffect(() => {
     window.localStorage.setItem("TickerPrice", price);
-  }, [price]);
+  }, [price, fetchData]);
 
   async function fetchData() {
     try {
