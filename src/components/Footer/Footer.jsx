@@ -7,7 +7,6 @@ export default function Footer() {
   return (
     <footer id="footer-page">
       <div className="wrapper header-footer-wrapper">
-        <img></img>
         <div className="footer-all-links">
           <div className="footer-social">
             <a href="#">{otherSvg(25).twitter}</a>
@@ -26,7 +25,7 @@ export default function Footer() {
             Powered by the
             <a href="https://www.bitfinex.com" target="_blank" rel="noreferrer">
               Bitfinex
-            </a>{" "}
+            </a>
             API <img src={bfxLogo} alt="Logo" />
           </h3>
         </div>

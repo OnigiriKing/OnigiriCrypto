@@ -8,7 +8,7 @@ export default function CoinPrice({ crypto, type=6 }) {
 
   React.useEffect(() => {
     window.localStorage.setItem("TickerPrice", price);
-  }, [price, fetchData]);
+  }, [price]);
 
   async function fetchData() {
     try {
@@ -32,7 +32,7 @@ export default function CoinPrice({ crypto, type=6 }) {
     return () => {
       clearInterval(intervalId);
     };
-  }, [crypto]);
+  }, [fetchData]);
 
   const percent = price[4];
 
