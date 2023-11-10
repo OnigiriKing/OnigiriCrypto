@@ -1,8 +1,4 @@
 import { Link } from "react-router-dom";
-import btc from "img/crypto/btc.png";
-import eth from "img/crypto/eth.png";
-import usdt from "img/crypto/usdt.png";
-import leo from "img/crypto/leo.png";
 import CoinPrice from "API/FetchCoinPrice";
 import { welcomeCoins } from "common/data/coinsData";
 
@@ -12,7 +8,7 @@ export default function Welcome() {
       const el = welcomeCoins[key];
       return (
         <Link to={`/coin/${key}`}>
-          <img src={el.img}></img>
+          <img src={el.img} alt={el.name}></img>
           <div>{el.name}</div>
           <h3>
             <CoinPrice crypto={el.sigh} />
