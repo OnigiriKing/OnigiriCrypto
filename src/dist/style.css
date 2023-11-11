@@ -127,6 +127,10 @@ a:hover path, path:hover path {
   display: flex;
   justify-content: center;
 }
+#footer-page .header-footer-wrapper {
+  display: flex;
+  justify-content: center;
+}
 #footer-page .footer-all-links {
   display: flex;
   flex-direction: column;
