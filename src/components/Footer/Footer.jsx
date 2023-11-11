@@ -9,14 +9,22 @@ export default function Footer() {
       <div className="wrapper header-footer-wrapper">
         <div className="footer-all-links">
           <div className="footer-social">
-            <a href="#">{otherSvg(25).twitter}</a>
-            <a href="#">{otherSvg(25).discord}</a>
-            <a href="#">{otherSvg(25).facebook}</a>
-            <a href="#">{otherSvg(25).youTube}</a>
+            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              {otherSvg(25).twitter}
+            </a>
+            <a href="http://discord.com" target="_blank" rel="noreferrer">
+              {otherSvg(25).discord}
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              {otherSvg(25).facebook}
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+              {otherSvg(25).youTube}
+            </a>
           </div>
           <div className="footer-terms">
-            <a href="#">Privacy</a>
-            <a href="#">Terms of Use</a>
+            <a href="/">Privacy</a>
+            <a href="/">Terms of Use</a>
           </div>
           <h4>
             <ApiStatus />

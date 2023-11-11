@@ -41,7 +41,7 @@ export default function ChooseUs() {
             </div>
           </div>
           <div className="choose-us-img">
-            <img src={homeBtf} />
+            <img src={homeBtf} alt="Home" />
           </div>
           <div className="choose-us-reasons">
             <div className="choose-reason">
