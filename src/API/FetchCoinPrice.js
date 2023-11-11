@@ -32,7 +32,7 @@ export default function CoinPrice({ crypto, type=6 }) {
     return () => {
       clearInterval(intervalId);
     };
-  }, [fetchData]);
+  }, [fetchData]); 
 
   const percent = price[4];
 
