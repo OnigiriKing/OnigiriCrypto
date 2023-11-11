@@ -23,8 +23,12 @@ export default function DropMenu() {
           </a>
         </div>
         <div className="drop-menu-social">
-          <a href="#">{allSvg(35).twitter}</a>
-          <a href="#">{allSvg(35).youTube}</a>
+          <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            {allSvg(35).twitter}
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
+            {allSvg(35).youTube}
+          </a>
         </div>
       </div>
     </div>
