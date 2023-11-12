@@ -26,7 +26,7 @@ export default function Coin() {
                 Price: <CoinPrice crypto={element.sigh} />
               </h3>
               <h3>
-                24h Change: <CoinPrice crypto={element.sigh} type="4" />
+                24h Change: <CoinPrice crypto={element.sigh} type="5" />
               </h3>
               <h3>
                 Volume: <CoinPrice crypto={element.sigh} type="7" />
