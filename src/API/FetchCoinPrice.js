@@ -18,7 +18,7 @@ export default function CoinPrice({ crypto, type=6 }) {
       async function fetchData() {
         try {
           const response = await axios.get(
-            `http://localhost:3000/api/${crypto}-price`
+            `https://api.bitfinex.com/v2/ticker/t${crypto}USD`
           );
           setPrice(response.data);
         } catch (error) {

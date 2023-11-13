@@ -6,7 +6,9 @@ export default function ApiStatus() {
 
   async function fetchStatus() {
     try {
-      const response = await axios.get(`http://localhost:3000/api/status`);
+      const response = await axios.get(
+        `https://api-pub.bitfinex.com/v2/platform/status`
+      );
       setStatus(response.data[0]);
     } catch (error) {
       console.error(error);
