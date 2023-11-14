@@ -3,7 +3,7 @@ const axios = require("axios");
 exports.handler = async function (event, context) {
   try {
     const response = await axios.get(
-      `https://api.bitfinex.com/v2/ticker/t${crypto}USD`
+      "https://api-pub.bitfinex.com/v2/platform/status"
     );
     return {
       statusCode: 200,
