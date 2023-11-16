@@ -18,7 +18,7 @@ export default function CoinPrice({ crypto, type=6 }) {
       async function fetchData() {
         try {
           const response = await axios.get(
-            `https://api.bitfinex.com/v2/ticker/t${crypto}USD`
+            `https://onigiri-crypto.netlify.app/.netlify/functions/fetchCoin?crypto=${crypto}`
           );
           setPrice(response.data);
         } catch (error) {
