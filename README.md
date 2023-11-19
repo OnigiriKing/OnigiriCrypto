@@ -1,4 +1,4 @@
-<h2 align='center'>Onigiri Crypto ⚡️</h2>
+<h1 align='center'>Onigiri Crypto ⚡️</h1>
 
 <h2>About the project</h2>
 
