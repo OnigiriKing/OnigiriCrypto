@@ -9,7 +9,7 @@ Live Demo: <a href='https://onigiri-crypto.netlify.app'>Onigiri Crypto</a>
 <h3>Build with:</h3>
 
 » SCSS <br>
-» React JS
+» React JS <br>
 » Bitfinex API
 
 <h2>Screenshots of the Project 📸</h2>
