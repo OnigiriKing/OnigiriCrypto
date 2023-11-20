@@ -543,4 +543,12 @@ a:hover path, path:hover path {
 
 .price-green {
   color: green;
+}
+
+.coin-page-buy {
+  margin-top: 4rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
+  align-self: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
