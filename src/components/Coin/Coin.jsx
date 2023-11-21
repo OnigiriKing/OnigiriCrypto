@@ -33,7 +33,14 @@ export default function Coin() {
               </h3>
             </div>
             <div className="coin-page-des">{element.des}</div>
-            <a className="coin-page-buy">Buy</a>
+            <a
+              href={`https://trading.bitfinex.com/t/${coin}:USD?type=exchange`}
+              target="_blank"
+              rel="noreferrer"
+              className="coin-page-buy"
+            >
+              Buy
+            </a>
           </div>
         </div>
       </div>
