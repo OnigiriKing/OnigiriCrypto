@@ -93,4 +93,9 @@
   background: $gradient-colors;
   align-self: center;
   text-align: center;
+
+  &:hover {
+    background: $gradient-reverse;
+    color: #fff;
+  }
 }
