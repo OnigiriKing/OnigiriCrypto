@@ -551,8 +551,9 @@ a:hover path, path:hover path {
   background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
   align-self: center;
   text-align: center;
+  transition: all 2s ease-in-out;
 }
 .coin-page-buy:hover {
-  background: linear-gradient(to right top, rgb(1, 167, 129), rgb(28, 56, 77));
+  background: linear-gradient(to left top, rgb(1, 167, 129), rgb(28, 56, 77));
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
