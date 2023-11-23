@@ -88,15 +88,39 @@
 }
 
 .coin-page-buy {
+  position: relative;
   margin-top: 4rem;
   padding: 1rem 2rem;
-  background: $gradient-colors;
   align-self: center;
   text-align: center;
   transition: all 2s ease-in-out;
 
   &:hover {
-    background: $gradient-reverse;
-    color: #fff;
+    color: #fff
   }
+}
+
+.coin-page-buy::before,
+.coin-page-buy::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: opacity 2s ease-in-out;
+}
+
+.coin-page-buy::before {
+  background: linear-gradient(to right top, rgb(28, 56, 77), rgb(1, 167, 129));
+}
+
+.coin-page-buy::after {
+  background: linear-gradient(to left top, rgb(1, 167, 129), rgb(28, 56, 77));
+  opacity: 0;
+}
+
+.coin-page-buy:hover::after {
+  opacity: 1;
 }
