@@ -547,6 +547,7 @@ a:hover path, path:hover path {
 
 .coin-page-buy {
   position: relative;
+  width: 4rem;
   margin-top: 4rem;
   padding: 1rem 2rem;
   align-self: center;
