@@ -64,13 +64,6 @@ export const coinList = {
     des: "UNUS SED LEO is a utility token designed to empower the Bitfinex community and provide utility for those seeking to maximize the output and capabilities of the Bitfinex trading platform.",
     rank: "21",
   },
-  MATIC: {
-    name: "Polygon",
-    sigh: "MATIC:",
-    img: maticImg,
-    des: "Polygon is a cryptocurrency, with the symbol MATIC, and also a technology platform that enables blockchain networks to connect and scale. Polygon—'Ethereum's internet of blockchains— launched under the name Matic Network in 2017.",
-    rank: "13",
-  },
   XRP: {
     name: "XRP",
     sigh: "XRP",
@@ -84,13 +77,6 @@ export const coinList = {
     img: linkImg,
     des: "Chainlink is a framework for building Decentralized Oracle Networks (DONs) that bring real-world data onto blockchain networks, enabling the creation of hybrid smart contracts. These DONs provide decentralized services such as Price Feeds, Proof of Reserve, Verifiable Randomness, Keepers, and the ability to connect to any web API. ",
     rank: "18",
-  },
-  "1INCH": {
-    name: "1INCH",
-    sigh: "1INCH:",
-    img: inchImg,
-    des: "The 1inch Network unites decentralized protocols whose synergy enables the most lucrative, fastest and protected operations in the DeFi space. 1inch offers access to hundreds of liquidity sources across multiple chains. It consists of five major components",
-    rank: "114",
   },
   ADA: {
     name: "Cardano",
