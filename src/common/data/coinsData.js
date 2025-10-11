@@ -2,10 +2,8 @@ import btcImg from "img/crypto/btc.png"
 import ethImg from "img/crypto/eth.png"
 import leoImg from "img/crypto/leo.png"
 import avaxImg from "img/crypto/avax.png"
-import maticImg from "img/crypto/matic.png"
 import xrpImg from "img/crypto/xrp.png"
 import linkImg from "img/crypto/link.png"
-import inchImg from "img/crypto/inch.png";
 import adaImg from "img/crypto/ada.png";
 import apeImg from "img/crypto/ape.png";
 import galaImg from "img/crypto/gala.png";
