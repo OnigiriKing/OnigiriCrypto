@@ -23,6 +23,7 @@ export default function CoinPrice({ crypto, type = 6 }) {
     }
 
     fetchData();
+
     const intervalId = setInterval(() => {
       fetchData();
     }, 5000);

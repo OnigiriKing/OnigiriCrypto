@@ -45,7 +45,6 @@ export default function CoinList() {
     const totalItems = Object.keys(coinList).length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    console.log(Array.from({ length: totalPages }));
 
     return (
       <div>
