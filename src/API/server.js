@@ -6,10 +6,9 @@ const cors = require("cors");
 const app = express();
 const port = 3000;
 
-// wont work without cors
+// CORS policy
 app.use(cors());
 
-// Define your server routes and middleware here
 // get crypto price
 app.get("/api/:symbol-price", async (req, res) => {
   const symbol = req.params.symbol;

@@ -28,10 +28,10 @@ export default function CoinList() {
             <CoinPrice crypto={el.sigh} />
           </h3>
           <h3 className="coin-info-persantage">
-            <CoinPrice crypto={el.sigh} type="5" />
+            <CoinPrice crypto={el.sigh} type={5} />
           </h3>
           <h3 className="coin-list-volume">
-            <CoinPrice crypto={el.sigh} type="7" />
+            <CoinPrice crypto={el.sigh} type={7} />
           </h3>
         </Link>
       );
