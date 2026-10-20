@@ -2,13 +2,7 @@ import React from "react";
 import axios from "axios";
 
 export default function CoinPrice({ crypto, type = 6 }) {
-  const [price, setPrice] = React.useState(
-    window.localStorage.getItem("TickerPrice") || { [type]: 0, 5: 0 }
-  );
-
-  React.useEffect(() => {
-    window.localStorage.setItem("TickerPrice", JSON.stringify(price));
-  }, [price]);
+  const [price, setPrice] = React.useState(null);
 
   React.useEffect(() => {
     async function fetchData() {
@@ -32,6 +26,10 @@ export default function CoinPrice({ crypto, type = 6 }) {
       clearInterval(intervalId);
     };
   }, [crypto]);
+
+  if (!price) {
+    return <b>Loading...</b>;
+  }
 
   const percent = price[5];
 
