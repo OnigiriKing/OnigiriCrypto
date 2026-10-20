@@ -3,6 +3,7 @@ import axios from "axios";
 
 export default function CoinPrice({ crypto, type = 6 }) {
   const [price, setPrice] = React.useState(null);
+  const [hasError, setHasError] = React.useState(false);
 
   React.useEffect(() => {
     async function fetchData() {
@@ -11,7 +12,9 @@ export default function CoinPrice({ crypto, type = 6 }) {
           `https://onigiri-crypto.netlify.app/.netlify/functions/fetchCoin?crypto=${crypto}`
         );
         setPrice(response.data);
+        setHasError(false);
       } catch (error) {
+        setHasError(true);
         console.error(error);
       }
     }
@@ -26,6 +29,10 @@ export default function CoinPrice({ crypto, type = 6 }) {
       clearInterval(intervalId);
     };
   }, [crypto]);
+
+  if (hasError) {
+    return <b>Unavailable</b>;
+  }
 
   if (!price) {
     return <b>Loading...</b>;
