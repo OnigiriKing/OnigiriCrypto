@@ -1,50 +1,21 @@
-import CoinPrice from "API/FetchCoinPrice";
 import { coinList } from "common/data/coinsData";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import { animateScroll } from "react-scroll";
+import CoinRow from "./CoinRow";
 
 export default function CoinList() {
-  
-
   const scrollToElement = (elementName) => {
     animateScroll.scrollTo(document.getElementById(elementName).offsetTop, {
       duration: 50,
     });
   };
 
-  const [page, setPage] = useState([0, 6])
-
-  function DisplayCoins() {
-    return Object.keys(coinList).slice(...page).map((key) => {
-      const el = coinList[key];
-      return (
-        <Link to={`/coin/${key}`} className="coin-info">
-          <div className="coin-info-img">
-            <img src={el.img} alt={el.name} />
-            <h3>{el.name}</h3>
-          </div>
-          <h3>
-            <CoinPrice crypto={el.sigh} />
-          </h3>
-          <h3 className="coin-info-persantage">
-            <CoinPrice crypto={el.sigh} type={5} />
-          </h3>
-          <h3 className="coin-list-volume">
-            <CoinPrice crypto={el.sigh} type={7} />
-          </h3>
-        </Link>
-      );
-    });
-  }
-
-
+  const [page, setPage] = useState([0, 6]);
 
   function PageElement() {
     const itemsPerPage = 6;
     const totalItems = Object.keys(coinList).length;
     const totalPages = Math.ceil(totalItems / itemsPerPage);
-
 
     return (
       <div>
@@ -78,7 +49,15 @@ export default function CoinList() {
             <h3>24h Change</h3>
             <h3 className="coin-list-volume">Volume</h3>
           </div>
-          <DisplayCoins />
+          {Object.keys(coinList)
+            .slice(...page)
+            .map((coinKey) => (
+              <CoinRow
+                key={coinKey}
+                coinKey={coinKey}
+                coin={coinList[coinKey]}
+              />
+            ))}
         </div>
         <div className="coin-list-pages">
           <PageElement />
