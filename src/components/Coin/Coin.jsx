@@ -18,7 +18,7 @@ export default function Coin() {
           <div className="coin-page-image">
             <img src={element.img} alt={element.name}></img>
             <h3>{element.name}</h3>
-            <h3>Rank #{element.rank}</h3>
+            {element.rank && <h3>Rank #{element.rank}</h3>}
           </div>
           <div className="coin-page-info">
             <div className="coin-page-price">

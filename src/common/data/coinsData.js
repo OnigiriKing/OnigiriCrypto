@@ -5,9 +5,9 @@ import avaxImg from "img/crypto/avax.png"
 import xrpImg from "img/crypto/xrp.png"
 import linkImg from "img/crypto/link.png"
 import adaImg from "img/crypto/ada.png";
-import apeImg from "img/crypto/ape.png";
-import galaImg from "img/crypto/gala.png";
-import sushiImg from "img/crypto/sushi.png";
+import solImg from "img/crypto/sol.png";
+import ltcImg from "img/crypto/ltc.png";
+import dotImg from "img/crypto/dot.png";
 
 export const welcomeCoins = {
   BTC: {
@@ -83,25 +83,22 @@ export const coinList = {
     des: "Cardano is a proof-of-stake blockchain network that supports decentralized applications (dApps) with a multi-asset ledger and smart contracts. Unlike many other blockchains, Cardano does not build on top of technical foundations from Bitcoin or other blockchains. Instead Cardano works with leading academics on research to develop new and innovative solutions, which are subjected to academic peer review and presented at major international conferences. The team then builds a prototype to understand real-world technical and functional implementation issues, enabling the creation of technical specifications before formal development begins.",
     rank: "9",
   },
-  APE: {
-    name: "ApeCoin",
-    sigh: "APE",
-    img: apeImg,
-    des: "Culture has found new expression in web3 through art, gaming, entertainment, and events. The possibilities for blockchain’s impact on culture are so endless that they can’t possibly all be predicted yet. APE is a token made to support what’s next, controlled and built on by the community. It will serve as a decentralized protocol layer for community-led initiatives that drive culture forward into the metaverse. Yuga Labs is a web3 company best known for the creation of the Bored Ape Yacht Club. It will be a community member in the ApeCoin DAO and will adopt APE as the primary token across new projects.",
-    rank: "86",
+  SOL: {
+    name: "Solana",
+    sigh: "SOL",
+    img: solImg,
+    des: "Solana is a blockchain network for payments and decentralized applications. SOL is its native token, used to pay transaction fees and help secure the network through staking.",
   },
-  GALA: {
-    name: "GALA",
-    sigh: "GALA:",
-    img: galaImg,
-    des: "Culture has found new expression in web3 through art, gaming, entertainment, and events. The possibilities for blockchain’s impact on culture are so endless that they can’t possibly all be predicted yet. APE is a token made to support what’s next, controlled and built on by the community. It will serve as a decentralized protocol layer for communiGala is a blockchain gaming ecosystem. Gamers can explore different type of games and have their experiences interact across each other on the Gala platform. The GALA token is the utility token and primary medium of exchange of the ecosystem. Game items are represented as NFTs on the Ethereum blockchain and users can trade them on all marketplaces.ty-led initiatives that drive culture forward into the metaverse. Yuga Labs is a web3 company best known for the creation of the Bored Ape Yacht Club. It will be a community member in the ApeCoin DAO and will adopt APE as the primary token across new projects.",
-    rank: "97",
+  LTC: {
+    name: "Litecoin",
+    sigh: "LTC",
+    img: ltcImg,
+    des: "Litecoin is a peer-to-peer cryptocurrency designed for digital payments. Its network uses proof of work to confirm transactions without a central authority.",
   },
-  SUSHI: {
-    name: "SUSHI",
-    sigh: "SUSHI:",
-    img: sushiImg,
-    des: "Sushi is a DeFi protocol that is completely community-driven, serving up delicious interest for your held crypto assets. On Sushi, you can take advantage of passive-income providing DeFi tools such as liquidity providing, yield farming and staking. Furthermore, due to the decentralized nature of being an AMM (Automated Market Maker), Sushi has fewer hurdles to execute your cryptocurrency trades and all fees are paid to the users who provided liquidity, just as it should be! Sushi is host to many hidden gems that are unavailable on other, similar exchanges, so it is a great way to discover new, exclusive opportunities. Sushi, serving DeFi’s best!",
-    rank: "233",
+  DOT: {
+    name: "Polkadot",
+    sigh: "DOT",
+    img: dotImg,
+    des: "Polkadot is a blockchain network designed to connect specialized blockchains so they can share data and security. DOT is its native token, used for staking and network governance.",
   },
 };
