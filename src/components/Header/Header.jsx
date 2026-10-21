@@ -19,14 +19,6 @@ export default function Header() {
           <a href="/#choose-us-screen">Features</a>
           <a href="/#join-us-screen">Explore</a>
         </div>
-        <div className="header-social">
-          <a href="https://twitter.com" target="_blank" rel="noreferrer">
-            {allSvg(25).twitter}
-          </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noreferrer">
-            {allSvg(25).youTube}
-          </a>
-        </div>
         <div className="header-menu-btn" onClick={() => handleMenuClick()}>
           <div>{allSvg(30).menu}</div>
         </div>

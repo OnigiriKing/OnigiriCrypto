@@ -21,6 +21,20 @@
   }
 }
 
+.coin-not-found {
+  padding: 3rem 0;
+  text-align: center;
+
+  h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+
+  p {
+    line-height: 1.6;
+  }
+}
+
 .coin-page-info-wrapper {
     display: flex;
     flex-direction: row;

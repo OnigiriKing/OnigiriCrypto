@@ -23,7 +23,7 @@
 }
 
 
-.header-links, .header-social {
+.header-links {
     display: flex;
     gap: 1.5rem;
     font-size: 1.1rem;
@@ -86,9 +86,4 @@
     gap: 1rem;
     font-size: 1.8rem;
     align-items: center;
-}
-
-.drop-menu-social {
-    display: flex;
-    gap: 2rem;
 }

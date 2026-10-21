@@ -8,6 +8,22 @@ export default function Coin() {
   const coin = coinType.toUpperCase();
   const element = coinList[coin];
 
+  if (!element) {
+    return (
+      <div id="coin-page">
+        <div className="wrapper coin-page-wrapper">
+          <Link to="/" className="coin-page-home-btn">
+            {otherSvg(30).rightArrow}Home
+          </Link>
+          <div className="coin-not-found">
+            <h1>Coin not found</h1>
+            <p>Choose a coin from the market list on the home page.</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div id="coin-page">
       <div className="wrapper coin-page-wrapper">
