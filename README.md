@@ -1,28 +1,62 @@
-<h1 align='center'>Onigiri Crypto ⚡️</h1>
+<h1 align="center">Onigiri Crypto ⚡️</h1>
 
-<h2>About the project</h2>
+A React app for checking cryptocurrency prices with data from Bitfinex.
 
-<p>Built with React and SCSS, Onigiri Crypto utilizes the Bitfinex API to deliver real-time cryptocurrency prices, offering a streamlined platform for tracking market trends and making informed decisions in the dynamic world of digital assets.</p>
+[Live demo](https://onigiri-crypto.netlify.app)
 
-Live Demo: <a href='https://onigiri-crypto.netlify.app'>Onigiri Crypto</a>
+## Features
 
-<h3>Build with:</h3>
+- A paginated market list with prices in USD and daily percentage changes.
+- Coin pages with descriptions, prices, trading volume, and links to Bitfinex.
+- Prices that refresh every five seconds while the page is open.
+- Loading and unavailable states, plus a fallback for unknown coins.
+- A responsive layout built with SCSS.
 
-» SCSS <br>
-» React JS <br>
-» Bitfinex API
+## Built with
 
-<h2>Screenshots of the Project 📸</h2>
-<br>
-<h3 align='center'>Home Page</h3>
+React 18, React Router, Axios, SCSS, Netlify Functions, and the Bitfinex public API.
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/onigiriCrypto/onigiriCrypto.webp'/>
-</div>
+## Run locally
 
-<br><br>
-<h3 align='center'>Coin Page</h3>
+Requires Node.js and npm.
 
-<div align='center'>
-<img src='https://github.com/OnigiriKing/my-new-portfolio/blob/main/src/pages/MyWorks/data/img/onigiriCrypto/onigiriCrypto-coin.png'/>
+```bash
+git clone https://github.com/OnigiriKing/OnigiriCrypto.git
+cd OnigiriCrypto
+npm ci
+npm start
+```
 
+Open [localhost:3000](http://localhost:3000) in your browser.
+
+Local startup uses the hosted price endpoint at `onigiri-crypto.netlify.app`.
+No API key or separate local server is needed. A network connection is required
+to load market data.
+
+## How the data works
+
+The price hook in `src/hooks/useCoinTicker.js` calls the deployed Netlify
+function in `netlify/functions/fetchCoin.js`. That function requests a coin's
+ticker from Bitfinex and returns its market data to the app.
+
+The market list shares one ticker response across each row's price, daily
+change, and volume. The footer checks Bitfinex's public platform-status endpoint
+directly.
+
+## Build
+
+```bash
+npm run build
+```
+
+The production files are generated in `build/`.
+
+## Styling
+
+The app imports the checked-in stylesheet at `src/dist/style.css`. Its SCSS
+sources are in `src/Styles/` and the component folders. Recompile the stylesheet
+after editing SCSS; `npm start` and `npm run build` use the existing CSS file.
+
+## Screenshot
+
+![Onigiri Crypto home page](docs/screenshots/home.jpg)
