@@ -16,10 +16,10 @@ export default function DropMenu() {
             Market
           </a>
           <a href="/#choose-us-screen" onClick={() => handleMenuClick()}>
-            Choose Us
+            Features
           </a>
           <a href="/#join-us-screen" onClick={() => handleMenuClick()}>
-            Join
+            Explore
           </a>
         </div>
         <div className="drop-menu-social">

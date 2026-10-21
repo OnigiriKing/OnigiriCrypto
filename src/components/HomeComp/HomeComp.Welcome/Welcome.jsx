@@ -22,8 +22,8 @@ export default function Welcome() {
     <div id="welcome-screen">
       <div className="wrapper welcome-wrapper">
         <div className="welcome-message">
-          <h2>TRACK AND TRADE</h2>
-          <h2>CRYPTO CURRENCIES</h2>
+          <h2>TRACK AND COMPARE</h2>
+          <h2>CRYPTO PRICES</h2>
         </div>
         <div className="welcome-crypto">
           <Coins />

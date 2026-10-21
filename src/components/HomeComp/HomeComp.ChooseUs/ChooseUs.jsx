@@ -5,37 +5,34 @@ export default function ChooseUs() {
     <div id="choose-us-screen">
       <div className="wrapper choose-us-wrapper">
         <h1 className="choose-us-baner">
-          WHY <b>CHOOSE US</b>
+          MARKET AT <b>A GLANCE</b>
         </h1>
         <div className="choose-us-body">
           <div className="choose-us-reasons">
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).wallet}</div>
               <div className="choose-reason-text">
-                <h2>EASY WALLET INTEGRATION</h2>
+                <h2>NO SIGN-UP</h2>
                 <p>
-                  Connect Trust Wallet, Metamask, or any popular wallet
-                  effortlessly for a secure experience.
+                  Check prices without creating an account or connecting a wallet.
                 </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).btc}</div>
               <div className="choose-reason-text">
-                <h2>DIVERSE CRYPTO SUPPORT</h2>
+                <h2>COMPARE COINS</h2>
                 <p>
-                  Trade Bitcoin, Ethereum, and more - we support a variety of
-                  cryptocurrencies.
+                  Browse Bitcoin, Ethereum, and other coins in one market list.
                 </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).tool}</div>
               <div className="choose-reason-text">
-                <h2>USER-FRIENDLY TOOLS</h2>
+                <h2>AUTO UPDATES</h2>
                 <p>
-                  Set quantities, customize listings, and control your crypto
-                  experience with ease.
+                  Prices refresh automatically while you browse.
                 </p>
               </div>
             </div>
@@ -47,27 +44,28 @@ export default function ChooseUs() {
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).nft}</div>
               <div className="choose-reason-text">
-                <h2>RECEIVE YOUR OWN NFTS</h2>
-                <p>Invest all your crypto at one place on one platform.</p>
+                <h2>COIN DETAILS</h2>
+                <p>
+                  Open a coin to see its description, price, and trading volume.
+                </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).global}</div>
               <div className="choose-reason-text">
-                <h2>GLOBAL EXPOSURE</h2>
+                <h2>BITFINEX DATA</h2>
                 <p>
-                  Join a worldwide community of crypto enthusiasts to expand
-                  your network.
+                  View market prices quoted in US dollars from the Bitfinex API.
                 </p>
               </div>
             </div>
             <div className="choose-reason">
               <div className="choose-reason-svg">{homeSvg(30).profit}</div>
               <div className="choose-reason-text">
-                <h2>PROFIT OPPORTUNITIES</h2>
+                <h2>24H CHANGES</h2>
                 <p>
-                  Maximize profits with our platform, whether you're new to
-                  trading or an expert.
+                  See each coin's daily percentage change, with gains and losses
+                  in color.
                 </p>
               </div>
             </div>

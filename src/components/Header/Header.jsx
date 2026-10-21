@@ -16,8 +16,8 @@ export default function Header() {
         <div className="header-links">
           <a href="/#welcome-screen">Home</a>
           <a href="/#coin-list-page">Market</a>
-          <a href="/#choose-us-screen">Choose Us</a>
-          <a href="/#join-us-screen">Join</a>
+          <a href="/#choose-us-screen">Features</a>
+          <a href="/#join-us-screen">Explore</a>
         </div>
         <div className="header-social">
           <a href="https://twitter.com" target="_blank" rel="noreferrer">
