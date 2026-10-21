@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { coinList } from "common/data/coinsData";
-import CoinPrice from "API/FetchCoinPrice";
+import CoinStats from "hooks/CoinStats";
 import otherSvg from "svg/otherSvg";
 
 export default function Coin() {
@@ -37,17 +37,7 @@ export default function Coin() {
             {element.rank && <h3>Rank #{element.rank}</h3>}
           </div>
           <div className="coin-page-info">
-            <div className="coin-page-price">
-              <h3>
-                Price: <CoinPrice crypto={element.sigh} />
-              </h3>
-              <h3>
-                24h Change: <CoinPrice crypto={element.sigh} type={5} />
-              </h3>
-              <h3>
-                Volume: <CoinPrice crypto={element.sigh} type={7} />
-              </h3>
-            </div>
+            <CoinStats key={element.sigh} crypto={element.sigh} />
             <div className="coin-page-des">{element.des}</div>
             <a
               href={`https://trading.bitfinex.com/t/${coin}:USD?type=exchange`}
